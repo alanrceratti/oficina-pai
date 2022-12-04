@@ -1,0 +1,20 @@
+.titulo {
+	color: antiquewhite;
+	font-size: 1.5rem;
+}
+
+.texto {
+	color: antiquewhite;
+	font-size: 0.75rem;
+	font-family: var(--type-second);
+	text-align: left;
+}
+
+.geometria {
+	width: 50%;
+}
+
+.container {
+	display: flex;
+	margin-top: 1rem;
+}

@@ -1,0 +1,13 @@
+.servicos {
+	display: block;
+}
+.servico {
+	display: inline;
+}
+img {
+	width: 10%;
+}
+
+h1 {
+	color: red;
+}
