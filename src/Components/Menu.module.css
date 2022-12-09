@@ -94,19 +94,18 @@
 .container {
 	background-color: rgb(255, 255, 255);
 	height: max-content;
-	width: 95%;
-	transform: translateX(-380px);
+	width: 100%;
+	transform: translateX(-180px);
 	animation: corridaLeft 1s forwards;
 }
 
 @keyframes corridaLeft {
 	to {
 		transform: initial;
-		margin-left: 10px;
 	}
 }
 
 .menumobile {
-	width: 100%;
+	width: 50%;
 	position: fixed;
 }

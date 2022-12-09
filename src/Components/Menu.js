@@ -22,9 +22,7 @@ const Menu = () => {
 						<NavLink>
 							<img
 								src={Roda}
-								className={`${
-									styles.roda
-								} menu-button App-logo  ${
+								className={`${styles.roda} menu-button ${
 									mobileMenu && styles.rodaActive
 								} `}
 								alt="App-logo"
