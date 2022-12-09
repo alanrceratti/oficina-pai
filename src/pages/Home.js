@@ -13,7 +13,6 @@ const Home = () => {
 		<>
 			<section className={styles.mainContainer}>
 				<Localizacao />
-
 				<Header />
 				<Menu />
 				<Titulo />

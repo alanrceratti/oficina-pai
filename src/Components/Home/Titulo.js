@@ -6,12 +6,12 @@ const Titulo = () => {
 	return (
 		<>
 			<section>
-				<h1 className={styles.titulo}>
+				<h1 className={`${styles.titulo} container`}>
 					Oficina especializada em Geometria e Balanceamento de
 					veículos.
 				</h1>
-				<div className={styles.container}>
-					<p className={styles.texto}>
+				<div className={`${styles.container} container`}>
+					<p className={`${styles.texto} container`}>
 						{" "}
 						Aqui somos especialistas em geometria e balanceamento.
 						<br />

@@ -2,6 +2,7 @@
 	display: block;
 }
 
-img {
-	width: 90%;
+.logoImg img {
+	width: 100%;
+	background: white;
 }

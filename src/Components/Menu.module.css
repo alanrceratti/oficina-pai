@@ -1,6 +1,6 @@
 .menu {
 	display: none;
-	justify-content: space-between;
+	/* justify-content: space-between;
 	align-items: center;
 	height: fit-content;
 	color: red;
@@ -8,17 +8,22 @@
 	border-radius: 4px;
 	background-color: #8b0000;
 	width: calc(100vw - 2rem);
-	margin: 1rem;
+	margin: 4rem 0rem 1rem 1rem; */
 }
-.menuLine {
-	display: flex;
+
+.menuActive {
+	display: inline;
+	height: fit-content;
+	color: red;
+	border: none;
+	background-color: #8b0000;
 }
 
 .link {
 	display: block;
 	text-align: center;
 	font-size: 0.75rem;
-	color: #ffff;
+	color: rgb(240, 0, 0);
 	padding: 0.3rem;
 	font-family: var(--type-first);
 }
@@ -40,48 +45,68 @@
 	text-align: left;
 	cursor: pointer;
 	display: inline;
+	width: 3rem;
+	height: auto;
+}
+/* [data-animation="once"] {
+	animation: var(--roda, 1s);
+} */
+@media {
+	.rodaActive {
+		animation: rodaLeft infinite 1s forwards;
+		animation-iteration-count: 1;
+	}
+}
+@keyframes rodaLeft {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
 }
 
-.linha,
-.linha::before,
-.linha::after {
+.linha {
 	display: block;
-	background-color: rgb(135, 4, 4);
+	background-color: #b22222;
 	height: 3px;
 	width: 20px;
 	border-radius: 2px;
 }
 
-.linha::before {
-	content: "";
-	margin-top: -8px;
-}
-
 .linha::after {
 	content: "";
-	margin-top: 12px;
+	display: block;
+	height: 3px;
+	width: 20px;
+	box-shadow: 0 8px #b22222, 0 -8px #b22222;
 }
 .linha {
 	margin-top: 18px;
 	margin-left: 5px;
 }
 
-.roda {
-	width: 12%;
-	height: auto;
-}
-/* .menuLine {
+.menuLine {
 	display: flex;
 	max-width: 100%;
-} */
-
-/* .container {
-	background-color: rgb(255, 255, 255);
-	width: max-content;
-	height: fit-content;
 }
-.container2 {
+
+.container {
 	background-color: rgb(255, 255, 255);
-	width: 100vw;
-	height: fit-content;
-} */
+	height: max-content;
+	width: 95%;
+	transform: translateX(-380px);
+	animation: corridaLeft 1s forwards;
+}
+
+@keyframes corridaLeft {
+	to {
+		transform: initial;
+		margin-left: 10px;
+	}
+}
+
+.menumobile {
+	width: 100%;
+	position: fixed;
+}
