@@ -1,11 +1,11 @@
 import React from "react";
-import style from "./Servicos.module.css";
+import style from "./ServicosList.module.css";
 import Oil from "../../Assets/oil.png";
 import Suspension from "../../Assets/suspension.png";
 import Service from "../../Assets/service.png";
 import Eixo from "../../Assets/eixo.png";
 
-const Servicos = () => {
+const ServicosList = () => {
 	return (
 		<>
 			<section>
@@ -32,4 +32,4 @@ const Servicos = () => {
 	);
 };
 
-export default Servicos;
+export default ServicosList;

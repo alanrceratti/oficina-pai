@@ -58,7 +58,7 @@ a {
 	margin: 0 auto;
 }
 
-@media {
+@media (min-width: 24rem) {
 	.App-logo {
 		animation: App-logo-spin infinite 5s linear;
 	}

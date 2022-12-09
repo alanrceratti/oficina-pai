@@ -1,0 +1,15 @@
+.container {
+	display: block;
+}
+
+.logoImg {
+	width: 100%;
+	background-color: #f0fff0;
+	height: 5rem;
+	height: fit-content;
+}
+
+.logo {
+	width: 90%;
+	margin: 0 auto;
+}
