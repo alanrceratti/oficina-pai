@@ -1,14 +1,36 @@
 .titulo {
-	color: antiquewhite;
+	color: var(--blue);
+	display: block;
 	font-size: 1.5rem;
-	margin: 4rem 0 2rem 2rem;
+	padding: 6rem 0rem 2rem 0rem;
+	background: url("../../Assets/bmw.jpg") no-repeat center center;
+	background-size: cover;
+	margin-top: 4rem;
+	background-position: top;
+	-webkit-text-stroke: 1px rgba(201, 203, 206, 0.492);
+}
+
+.titulo2 {
+	color: white;
+	display: block;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 10;
+	background: url("../../Assets/agendamento.jpg") no-repeat center center;
+	background-size: cover;
+	width: auto;
+	height: 10rem;
+	margin-top: 1rem;
+	background-position: center;
 }
 
 .texto {
-	color: antiquewhite;
+	color: rgb(58, 58, 58);
 	font-size: 0.75rem;
-	font-family: var(--type-second);
+	font-family: "Inter";
+	font-weight: 400;
 	text-align: left;
+	border: 1px solid rgba(196, 196, 196, 0.134);
 }
 
 .geometria {

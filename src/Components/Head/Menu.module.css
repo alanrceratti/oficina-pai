@@ -1,123 +1,137 @@
-.menu {
-	display: none;
+:root {
+	--blue: #1261a3;
+	--background1: #f5fffa;
+	--orange: #ff9f29;
+	--text: "Inter";
+	--title: "Roboto";
 }
 
-.menuActive {
-	display: inline;
-	height: fit-content;
-	border: none;
-}
-
-.link {
-	display: block;
-	font-weight: bold;
-	text-align: center;
-	font-size: 0.75rem;
-	color: #a52a2a;
-	padding: 0.3rem;
-	font-family: var(--type-first);
-}
-.link::after {
-	content: "";
-	display: flex;
-	box-shadow: 0 1px 2px rgba(216, 198, 198, 0.2);
-	position: relative;
-	height: 2px;
-	width: 90%;
-	margin: 0 auto;
-}
-
-.link:hover {
-	color: #b22222;
-}
-
-.roda {
-	text-align: left;
-	cursor: pointer;
-	display: inline;
-	width: 3rem;
-	height: auto;
-}
-
-.rodaActive {
-	animation: rodaLeft infinite 1s forwards;
-	animation-iteration-count: 1;
-}
-
-@keyframes rodaLeft {
-	from {
-		transform: rotate(0deg);
+@media (max-width: 24rem) {
+	.menu {
+		display: none;
 	}
-	to {
-		transform: rotate(-360deg);
+
+	.menuActive {
+		display: inline;
+		height: fit-content;
+		border: none;
+	}
+
+	.link {
+		display: block;
+		font-weight: bold;
+		text-align: center;
+		font-size: 0.75rem;
+		color: var(--orange);
+		padding: 0.3rem;
+		font-family: var(--type-first);
+	}
+	.link::after {
+		content: "";
+		display: flex;
+		box-shadow: 0 1px 2px rgba(216, 198, 198, 0.2);
+		position: relative;
+		height: 2px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.roda {
+		text-align: left;
+		cursor: pointer;
+		display: inline;
+		width: 3rem;
+		height: auto;
+		margin: 0.2rem;
+		opacity: 0.8;
+	}
+
+	.rodaActive {
+		animation: rodaLeft infinite 1s forwards;
+		animation-iteration-count: 1;
+	}
+
+	@keyframes rodaLeft {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(-360deg);
+		}
+	}
+
+	.linha {
+		font-size: 0.9rem;
+		background: #1262a3ad;
+		color: #010845;
+		height: 2rem;
+		box-sizing: border-box;
+		border: 1px solid rgba(68, 68, 68, 0.262);
+		border-radius: 4px;
+		margin: auto auto;
+		margin-left: 0.4rem;
+		text-align: center;
+	}
+
+	/* .linha::after {
+		content: "";
+		display: block;
+		height: 3px;
+		width: 20px;
+		box-shadow: 0 8px #b22222, 0 -8px #b22222;
+	} */
+
+	.menuLine {
+		display: flex;
+		width: 100vw;
+		background-color: #f5fffa;
+		border: 1px solid rgba(216, 198, 198, 0.3);
+		-bottom: 0.5rem;
+	}
+
+	.menucontainer {
+		background-color: #2b2b2b;
+		box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.2);
+		height: max-content;
+		width: 100%;
+		transform: translateX(-180px);
+		animation: corridaLeft 1s forwards;
+		border-radius: 4px;
+	}
+
+	@keyframes corridaLeft {
+		to {
+			transform: initial;
+		}
+	}
+
+	.menumobile {
+		width: 50%;
+		position: fixed;
 	}
 }
-
-.linha {
-	display: block;
-	background-color: #b22222;
-	height: 3px;
-	width: 20px;
-	border-radius: 2px;
-}
-
-.linha::after {
-	content: "";
-	display: block;
-	height: 3px;
-	width: 20px;
-	box-shadow: 0 8px #b22222, 0 -8px #b22222;
-}
-.linha {
-	margin-top: 18px;
-	margin-left: 5px;
-}
-
-.menuLine {
-	display: flex;
-	max-width: 100%;
-}
-
-.container {
-	background-color: #2b2b2b;
-	box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.2);
-	height: max-content;
-	width: 100%;
-	transform: translateX(-180px);
-	animation: corridaLeft 1s forwards;
-	border-radius: 4px;
-}
-
-@keyframes corridaLeft {
-	to {
-		transform: initial;
-	}
-}
-
-.menumobile {
-	width: 50%;
-	position: fixed;
-}
-
 /* Tablet */
 @media (min-width: 24rem) {
-	.linha,
-	.roda {
-		display: none;
+	.link {
+		font-size: 1rem;
+		display: inline-block;
+		color: #a52a2a;
+		margin-top: 0.5rem;
+		cursor: pointer;
+		border: none;
+		border-radius: 0.4rem;
+		background: rgb(48, 48, 48);
+		padding: 0.8rem 1rem;
+		box-sizing: border-box;
+	}
+	a {
+		margin: 0.5rem;
 	}
 }
 
 /* Laptop */
 @media (min-width: 48rem) and (max-width: 47rem) {
-	.linha,
-	.roda {
-		display: none;
-	}
 }
 /* Desktop */
 @media (min-width: 48rem) and (max-width: 47rem) {
-	.linha,
-	.roda {
-		display: none;
-	}
 }

@@ -4,12 +4,12 @@ body {
 	height: auto;
 	border: 0;
 	outline: 0;
-	color: #f5fffa;
+	color: #f5fcf9;
 	--type-first: Helvetica, Arial, sans-serif;
 	--type-second: "Spectral", Georgia;
 	font-family: var(--type-first);
 	margin: 0px;
-	background-color: rgb(26, 26, 26);
+	background-color: #f5fffa;
 	min-width: 360px;
 }
 
@@ -54,7 +54,7 @@ a {
 
 .container {
 	max-width: 50rem;
-	padding: 0 1rem;
+	padding: 0 0.5rem;
 	margin: 0 auto;
 }
 

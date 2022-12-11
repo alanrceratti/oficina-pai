@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Menu.module.css";
 import Roda from "../../Assets/roda.svg";
-import { Link } from "react-router-dom";
 import useMedia from "../../Hooks/useMedia";
 import { NavLink } from "react-router-dom";
 
@@ -30,7 +29,12 @@ const Menu = () => {
 								onClick={() => setMobileMenu(!mobileMenu)}
 							/>
 						</NavLink>
-						<div className={styles.linha}></div>
+						<button
+							className={styles.linha}
+							onClick={() => setMobileMenu(!mobileMenu)}
+						>
+							Menu
+						</button>
 					</div>
 				)}
 				<section>
@@ -39,19 +43,19 @@ const Menu = () => {
 							mobileMenu && styles.menuActive
 						}`}
 					>
-						<div className={styles.container}>
-							<Link className={styles.link} to="/agendamentos">
+						<div className={styles.menucontainer}>
+							<a className={styles.link} href="/agendamentos">
 								Agendamentos
-							</Link>
-							<Link className={styles.link} to="/servicos">
+							</a>
+							<a className={styles.link} href="/servicos">
 								Serviços
-							</Link>
-							<Link className={styles.link} to="/sobre">
+							</a>
+							<a className={styles.link} href="/sobre">
 								Sobre nós
-							</Link>
-							<Link className={styles.link} to="/contato">
+							</a>
+							<a className={styles.link} href="/contato">
 								Contato
-							</Link>
+							</a>
 						</div>
 					</nav>
 				</section>

@@ -1,9 +1,11 @@
 .endereco {
 	display: block;
-	color: red;
+	color: rgb(213, 210, 210);
 	font-size: 0.75rem;
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
+	font-weight: lighter;
+	font-family: sans-serif;
 	background-color: rgb(53, 53, 53);
 }
