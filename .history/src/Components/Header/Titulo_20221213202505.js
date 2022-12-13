@@ -8,7 +8,7 @@ const Titulo = () => {
 			<section>
 				<h1 className={`${styles.titulo} container`}>
 					Oficina especializada em Geometria e Balanceamento de
-					veículos.asdasd
+					veículos.
 				</h1>
 				<div className={`${styles.container} container`}>
 					<p className={`${styles.texto} container`}>
