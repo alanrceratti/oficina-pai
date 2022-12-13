@@ -15,8 +15,8 @@ const Menu = () => {
 		setMobileMenu(!mobileMenu);
 	}
 	const toggleClass = () => {
-		setIsActive(!isActive);
 		handleClick();
+		setIsActive(!isActive);
 	};
 	const listenToScroll = () => {
 		const heighToHide = getOffset(document.getElementById("stickmenu"));
@@ -54,8 +54,8 @@ const Menu = () => {
 									src={Roda}
 									className={
 										isActive
-											? `${styles.roda} menu-button ${mobileMenu} ${styles.rodaActive}`
-											: `${styles.roda} menu-button ${mobileMenu}`
+											? `${styles.roda} ${mobileMenu} ${styles.rodaActive}`
+											: `${styles.roda} ${mobileMenu}`
 									}
 									alt="App-logo"
 									onClick={toggleClass}
@@ -76,16 +76,18 @@ const Menu = () => {
 							<NavLink>
 								<img
 									src={Roda}
-									className={`${styles.roda} menu-button ${
-										mobileMenu && styles.rodaActive
-									} `}
+									className={
+										isActive
+											? `${styles.roda} ${mobileMenu} ${styles.rodaActive}`
+											: `${styles.roda} ${mobileMenu}`
+									}
 									alt="App-logo"
-									onClick={() => setMobileMenu(!mobileMenu)}
+									onClick={toggleClass}
 								/>
 							</NavLink>
 							<button
 								className={styles.linha}
-								onClick={() => setMobileMenu(!mobileMenu)}
+								onClick={toggleClass}
 							>
 								MENU
 							</button>
