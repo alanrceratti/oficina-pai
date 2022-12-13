@@ -5,7 +5,7 @@ import Geometria from "../../Assets/geometria.png";
 const Titulo = () => {
 	return (
 		<>
-			<section>
+			<section id="stickmenu">
 				<div className={`${styles.main} container`}>
 					<h1 className={`${styles.titulo} container`}>
 						Oficina especializada em Geometria e Balanceamento de
