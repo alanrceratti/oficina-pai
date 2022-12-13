@@ -33,11 +33,11 @@ const Menu = () => {
 							className={styles.linha}
 							onClick={() => setMobileMenu(!mobileMenu)}
 						>
-							Menu
+							MENU
 						</button>
 					</div>
 				)}
-				<section>
+				<section className={styles.absolute}>
 					<nav
 						className={`${styles.menu} ${
 							mobileMenu && styles.menuActive

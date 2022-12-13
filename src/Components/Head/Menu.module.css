@@ -62,15 +62,16 @@
 
 	.linha {
 		font-size: 0.9rem;
-		background: #1262a3ad;
-		color: #010845;
-		height: 2rem;
+		background: var(--blue);
+		color: #ffffff;
+		height: 1.5rem;
 		box-sizing: border-box;
 		border: 1px solid rgba(68, 68, 68, 0.262);
 		border-radius: 4px;
 		margin: auto auto;
 		margin-left: 0.4rem;
 		text-align: center;
+		font-size: 0.75rem;
 	}
 
 	/* .linha::after {
@@ -85,8 +86,6 @@
 		display: flex;
 		width: 100vw;
 		background-color: #f5fffa;
-		border: 1px solid rgba(216, 198, 198, 0.3);
-		-bottom: 0.5rem;
 	}
 
 	.menucontainer {
@@ -107,7 +106,10 @@
 
 	.menumobile {
 		width: 50%;
-		position: fixed;
+		position: relative;
+	}
+	.absolute {
+		position: absolute;
 	}
 }
 /* Tablet */

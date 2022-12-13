@@ -6,10 +6,12 @@ const Titulo = () => {
 	return (
 		<>
 			<section>
-				<h1 className={`${styles.titulo} container`}>
-					Oficina especializada em Geometria e Balanceamento de
-					veículos.asda
-				</h1>
+				<div className={`${styles.main} container`}>
+					<h1 className={`${styles.titulo} container`}>
+						Oficina especializada em Geometria e Balanceamento de
+						veículos.
+					</h1>
+				</div>
 				<div className={`${styles.container} container`}>
 					<p className={`${styles.texto} container`}>
 						{" "}

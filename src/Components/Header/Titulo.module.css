@@ -1,13 +1,13 @@
 .titulo {
-	color: var(--blue);
+	color: white;
 	display: block;
 	font-size: 1.5rem;
-	padding: 6rem 0rem 2rem 0rem;
-	background: url("../../Assets/bmw.jpg") no-repeat center center;
-	background-size: cover;
-	margin-top: 4rem;
+	padding-top: 2rem;
+	margin: 0.5rem auto;
 	background-position: top;
-	-webkit-text-stroke: 1px rgba(201, 203, 206, 0.492);
+	-webkit-text-stroke: 1px rgba(4, 9, 16, 0.536);
+	text-shadow: 2px 2px #000000cb;
+	line-height: 3rem;
 }
 
 .titulo2 {
@@ -40,4 +40,13 @@
 .container {
 	display: flex;
 	margin-top: 1rem;
+}
+.main {
+	padding: 0px;
+	width: auto;
+	padding-bottom: 1rem;
+	box-shadow: 0 0 0 3px rgb(8, 90, 162);
+	background: url("../../Assets/bmw.jpg") no-repeat center center;
+	background-size: cover;
+	height: 12rem;
 }
