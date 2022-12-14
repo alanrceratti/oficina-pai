@@ -6,7 +6,7 @@
 	--title: "Roboto";
 }
 
-@media (max-width: 24rem) {
+@media (max-width: 26rem) {
 	.menu {
 		display: none;
 	}
@@ -93,9 +93,12 @@
 		box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.2);
 		height: max-content;
 		width: 10rem;
+
+		border-radius: 4px;
+	}
+	.menucontainerActive {
 		transform: translateX(-180px);
 		animation: corridaLeft 1s forwards;
-		border-radius: 4px;
 	}
 	.menuopen {
 		position: fixed;
@@ -123,7 +126,7 @@
 	}
 }
 /* Tablet */
-@media (min-width: 24rem) {
+@media (min-width: 26rem) {
 	.link {
 		font-size: 1rem;
 		display: inline-block;

@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./Header.module.css";
 import LogoSF from "../../Assets/logosemfundoazul.png";
-
 import Localizacao from "./Localizacao";
-import Menu from "./Menu";
+import MenuMobile from "./MenuMobile";
 
 const Header = () => {
 	return (
@@ -15,7 +14,7 @@ const Header = () => {
 						<img src={LogoSF} alt="Ceratti-logo" />
 					</a>
 				</div>
-				<Menu />
+				<MenuMobile />
 			</section>
 		</>
 	);
