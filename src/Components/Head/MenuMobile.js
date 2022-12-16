@@ -84,9 +84,9 @@ const MenuMobile = () => {
 
 	return (
 		<>
-			<section className={styles.menublock}>
+			<section ref={ref} className={styles.menublock}>
 				{mobile && isVisible && (
-					<div ref={ref} className={styles.menumobile}>
+					<div className={styles.menumobile}>
 						<div className={styles.menuLine}>
 							<NavLink>
 								<img
@@ -110,7 +110,7 @@ const MenuMobile = () => {
 					</div>
 				)}{" "}
 				{mobile && !isVisible && (
-					<div ref={ref} className={` ${styles.menumobileActive}`}>
+					<div className={` ${styles.menumobileActive}`}>
 						<div className={`${styles.menuLine} `}>
 							<NavLink>
 								<img
@@ -133,7 +133,7 @@ const MenuMobile = () => {
 						</div>
 					</div>
 				)}
-				<section>
+				<section ref={ref}>
 					<nav
 						className={`${styles.menu} ${
 							mobileMenu && styles.menuActive
