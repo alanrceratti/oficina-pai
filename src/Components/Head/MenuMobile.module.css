@@ -1,11 +1,3 @@
-:root {
-	--blue: #1261a3;
-	--background1: #f5fffa;
-	--orange: #ff9f29;
-	--text: "Inter";
-	--title: "Roboto";
-}
-
 @media (max-width: 26rem) {
 	.menu {
 		display: none;
@@ -74,18 +66,12 @@
 		font-size: 0.75rem;
 	}
 
-	/* .linha::after {
-		content: "";
-		display: block;
-		height: 3px;
-		width: 20px;
-		box-shadow: 0 8px #b22222, 0 -8px #b22222;
-	} */
-
 	.menuLine {
 		display: flex;
-		width: 100vw;
+		width: max-content;
 		background-color: transparent;
+		margin: 0px;
+		padding: 0px;
 	}
 
 	.menucontainer {
@@ -118,9 +104,10 @@
 	}
 	.menumobile {
 		position: sticky;
+		width: fit-content;
 	}
 	.menublock {
-		width: 50%;
+		width: fit-content;
 		position: relative;
 		height: 3.9rem;
 	}

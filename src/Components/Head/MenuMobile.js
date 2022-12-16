@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import styles from "./MenuMobile.module.css";
 import Roda from "../../Assets/roda.svg";
 import useMedia from "../../Hooks/useMedia";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { getOffset } from "../../Hooks/getOffset";
 
 const MenuMobile = () => {
@@ -86,7 +86,7 @@ const MenuMobile = () => {
 		<>
 			<section className={styles.menublock}>
 				{mobile && isVisible && (
-					<div className={styles.menumobile}>
+					<div ref={ref} className={styles.menumobile}>
 						<div className={styles.menuLine}>
 							<NavLink>
 								<img
@@ -110,7 +110,7 @@ const MenuMobile = () => {
 					</div>
 				)}{" "}
 				{mobile && !isVisible && (
-					<div className={` ${styles.menumobileActive}`}>
+					<div ref={ref} className={` ${styles.menumobileActive}`}>
 						<div className={`${styles.menuLine} `}>
 							<NavLink>
 								<img
@@ -141,41 +141,45 @@ const MenuMobile = () => {
 					>
 						{" "}
 						{isVisible && (
-							<div
-								ref={ref}
+							<ul
 								className={`${styles.menucontainer} ${styles.menucontainerActive}`}
 							>
-								<a className={styles.link} href="/agendamentos">
+								<Link
+									className={styles.link}
+									to="/agendamentos"
+								>
 									Agendamentos
-								</a>
-								<a className={styles.link} href="/servicos">
+								</Link>
+								<Link className={styles.link} to="/servicos">
 									Serviços
-								</a>
-								<a className={styles.link} href="/sobre">
+								</Link>
+								<Link className={styles.link} to="/sobre">
 									Sobre nós
-								</a>
-								<a className={styles.link} href="/contato">
+								</Link>
+								<Link className={styles.link} to="/contato">
 									Contato
-								</a>
-							</div>
+								</Link>
+							</ul>
 						)}
 						{!isVisible && (
 							<div
-								ref={ref}
 								className={`${styles.menucontainer} ${styles.menuopen}  ${styles.menucontainerActive}`}
 							>
-								<a className={styles.link} href="/agendamentos">
+								<Link
+									className={styles.link}
+									to="/agendamentos"
+								>
 									Agendamentos
-								</a>
-								<a className={styles.link} href="/servicos">
+								</Link>
+								<Link className={styles.link} to="/servicos">
 									Serviços
-								</a>
-								<a className={styles.link} href="/sobre">
+								</Link>
+								<Link className={styles.link} to="/sobre">
 									Sobre nós
-								</a>
-								<a className={styles.link} href="/contato">
+								</Link>
+								<Link className={styles.link} to="/contato">
 									Contato
-								</a>
+								</Link>
 							</div>
 						)}
 					</nav>
