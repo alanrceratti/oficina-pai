@@ -1,25 +1,22 @@
 body {
+	resize: block;
 	display: block;
-	width: 100%;
+	max-width: 1200px;
+
 	height: auto;
 	border: 0;
 	outline: 0;
 	--main-white: #fcfffe;
 	--type-first: "Inter", Arial, sans-serif;
-	--type-second: "Spectral", Georgia;
+	--type-second: "Roboto", Georgia;
 	font-family: var(--type-first);
 	margin: 0px;
 	background-color: var(--main-white);
-	min-width: 360px;
 	--blue: #1261a3;
 	--background1: #f5fffa;
 	--orange: #ff9f29;
-	--text: "Inter";
-	--title: "Roboto";
 }
-html {
-	min-width: 360px;
-}
+
 .App {
 	display: block;
 	max-height: 100vh;
@@ -105,7 +102,7 @@ a {
 	border-radius: 0.2rem;
 	z-index: -1;
 }
-
+ as */
 .animeLeft {
 	opacity: 0;
 	transform: translateX(-20px);
@@ -117,8 +114,8 @@ a {
 		opacity: 1;
 		transform: initial;
 	}
-} */
-
+}
+/*
 /* 
 .AppBody {
 	flex: 1;

@@ -110,6 +110,7 @@
 		width: fit-content;
 		position: relative;
 		height: 3.9rem;
+		z-index: 100;
 	}
 }
 /* Tablet */
