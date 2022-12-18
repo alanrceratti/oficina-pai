@@ -1,8 +1,7 @@
 body {
 	resize: block;
 	display: block;
-	max-width: 1200px;
-
+	max-width: fit-content;
 	height: auto;
 	border: 0;
 	outline: 0;
@@ -57,12 +56,24 @@ a {
 }
 
 .container {
-	max-width: 50rem;
+	max-width: 80rem;
 	padding: 0 0.5rem;
 	margin: 0 auto;
 }
+.animeLeft {
+	opacity: 0;
+	transform: translateX(-20px);
+	animation: animeLeft 0.3s forwards;
+}
 
-@media (min-width: 24rem) {
+@keyframes animeLeft {
+	to {
+		opacity: 1;
+		transform: initial;
+	}
+}
+
+/* @media (min-width: 26rem) {
 	.App-logo {
 		animation: App-logo-spin infinite 5s linear;
 	}
@@ -75,7 +86,7 @@ a {
 	to {
 		transform: rotate(-360deg);
 	}
-}
+} */
 
 /* .mainContainer {
 	margin-top: 4rem;
@@ -103,18 +114,7 @@ a {
 	z-index: -1;
 }
  as */
-.animeLeft {
-	opacity: 0;
-	transform: translateX(-20px);
-	animation: animeLeft 0.3s forwards;
-}
 
-@keyframes animeLeft {
-	to {
-		opacity: 1;
-		transform: initial;
-	}
-}
 /*
 /* 
 .AppBody {

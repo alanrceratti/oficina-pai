@@ -9,14 +9,14 @@ const Footer = () => {
 		<section className={styles.footermain}>
 			<div className={styles.footer}>
 				<h1 className={styles.horario}>
-					Horários de atendimento:
-					<br /> Seg - Sexta das 8:00 às 18:00 <br />
+					<p>Horários de atendimento:</p>
+					Seg - Sexta das 8:00 às 18:00 <br />
 					Sábado das 8:00 às 13:00 <br />
 					Domingo - Fechado
 				</h1>
 				<span></span>
 				<h1 className={styles.contato}>
-					Contatos: <br />
+					<p>Contatos: </p>
 					Fixo: (55) 3221-2273 <br />
 					Celular: (55)99996-5450 <br />
 					Email: rogerio-ceratti@hotmail.com

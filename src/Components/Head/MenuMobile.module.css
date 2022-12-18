@@ -118,14 +118,14 @@
 	.link {
 		font-size: 1rem;
 		display: inline-block;
-		color: #a52a2a;
+		color: white;
 		margin-top: 0.5rem;
-		cursor: pointer;
-		border: none;
 		border-radius: 0.4rem;
-		background: rgb(48, 48, 48);
-		padding: 0.8rem 1rem;
+		background: var(--blue);
+		padding: 0.4rem 0.5rem;
 		box-sizing: border-box;
+		width: auto;
+		height: auto;
 	}
 	a {
 		margin: 0.5rem;
@@ -133,8 +133,32 @@
 }
 
 /* Laptop */
-@media (min-width: 48rem) and (max-width: 47rem) {
+@media (min-width: 48rem) {
+	.link {
+		font-size: 1rem;
+		display: inline-block;
+		color: white;
+		margin-top: 0.5rem;
+		border-radius: 0.4rem;
+		background: var(--blue);
+		padding: 0.5rem 0.7rem;
+	}
+	a {
+		margin: 0.5rem;
+	}
 }
 /* Desktop */
-@media (min-width: 48rem) and (max-width: 47rem) {
+@media (min-width: 84rem) {
+	.link {
+		font-size: 1.5rem;
+		display: inline-block;
+		color: white;
+		margin-top: 0.5rem;
+		border-radius: 0.4rem;
+		background: var(--blue);
+		padding: 1rem 3rem;
+	}
+	a {
+		margin: 0.8rem;
+	}
 }

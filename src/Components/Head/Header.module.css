@@ -13,3 +13,24 @@
 	width: 90%;
 	margin: 0 auto;
 }
+
+@media (min-width: 48rem) {
+	.logoImg {
+		width: 100vw;
+		background-color: #f5fffa;
+	}
+	.logo img {
+		width: 55%;
+		min-width: 500px;
+	}
+}
+@media (min-width: 84rem) {
+	.logoImg {
+		width: 100vw;
+		background-color: #f5fffa;
+	}
+	.logo img {
+		max-width: 800px;
+		min-width: 500px;
+	}
+}

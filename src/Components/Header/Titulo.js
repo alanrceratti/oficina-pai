@@ -8,7 +8,7 @@ const Titulo = () => {
 		<>
 			<section id="stickmenu" className="animeLeft">
 				<div className={`${styles.main} container `}>
-					<h1 className={`${styles.titulo} container`}>
+					<h1 className={`${styles.titulo}`}>
 						Oficina especializada em Geometria e Balanceamento de
 						veículos.
 					</h1>
@@ -21,14 +21,14 @@ const Titulo = () => {
 					/>
 					<p className={`${styles.texto} container`}>
 						{" "}
-						Somos especialistas em geometria e balanceamento. <br />
-						<br /> Uma das únicas oficinas a oferecer o serviço de
+						- Somos especialistas em geometria e balanceamento.{" "}
+						<br />
+						<br /> - Uma das únicas oficinas a oferecer o serviço de
 						alinhamento de eixo traseiro, com qualidade e segurança
 						que você merece. <br />
-						<br />
-						Profissionais com mais de 20 anos de experiência no ramo
-						automotivo, seu carro não poderia estar em um lugar
-						melhor!{" "}
+						<br />- Profissionais com mais de 20 anos de experiência
+						no ramo automotivo, seu carro não poderia estar em um
+						lugar melhor!{" "}
 					</p>
 				</div>
 			</section>
