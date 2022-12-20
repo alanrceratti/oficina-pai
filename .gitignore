@@ -9,6 +9,7 @@ history
 .history
 # testing
 /coverage
+src/Components/Contato/Map
 
 # production
 /build

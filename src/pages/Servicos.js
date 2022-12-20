@@ -7,8 +7,8 @@ const Servicos = () => {
 		<>
 			<section>
 				<Header />
+				<Localizacao />
 			</section>
-			<Localizacao />
 		</>
 	);
 };

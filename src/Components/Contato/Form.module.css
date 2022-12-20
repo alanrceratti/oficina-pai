@@ -1,0 +1,36 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+	display: block;
+	border: 1px solid #ccc;
+	width: 100%;
+
+	border-radius: 4px;
+	background: #eee;
+	transition: 0.2s;
+	margin: 0.5rem 0 1rem 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	outline: none;
+	border: var(--blue);
+	background: white;
+	box-shadow: 0 0 0 3px var(--orange);
+}
+
+.form {
+	display: flex;
+	border: 1px solid black;
+	width: 90%;
+	margin: 1rem auto;
+	min-width: 300px;
+}
+
+Form {
+	width: 100%;
+	margin: 1rem;
+}
