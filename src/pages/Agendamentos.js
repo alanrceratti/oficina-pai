@@ -5,7 +5,7 @@ import AgendamentosHome from "../Components/Agendamentos/AgendamentosHome";
 
 const Agendamentos = () => {
 	return (
-		<section>
+		<section className="mainContainer">
 			<Header />
 			<AgendamentosHome />
 			<Localizacao />

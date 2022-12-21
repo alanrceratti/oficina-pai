@@ -10,7 +10,7 @@ import ServicosList from "../Components/Header/ServicosList";
 const Home = () => {
 	return (
 		<>
-			<section className={styles.mainContainer}>
+			<section className="mainContainer">
 				<Header />
 				<Titulo />
 				<Titulo2 />

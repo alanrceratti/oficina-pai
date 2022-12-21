@@ -4,9 +4,10 @@ import Localizacao from "../Components/Head/Localizacao";
 
 const Sobre = () => {
 	return (
-		<div>
-			<Header /> <Localizacao />
-		</div>
+		<section className="mainContainer">
+			<Header />
+			<Localizacao />
+		</section>
 	);
 };
 

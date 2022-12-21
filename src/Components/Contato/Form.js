@@ -16,10 +16,12 @@ const Form = () => {
 	return (
 		<>
 			{" "}
-			<section>
+			<section className="container">
 				<div className={styles.form}>
 					<form onSubmit={handleSubmit}>
-						<label htmlFor="name">Nome</label>
+						<label className={styles.label} htmlFor="name">
+							Nome
+						</label>
 						<input
 							type="text"
 							id="name"
@@ -28,7 +30,9 @@ const Form = () => {
 							onChange={({ target }) => setName(target.value)}
 						/>
 
-						<label htmlFor="email">Email</label>
+						<label className={styles.label} htmlFor="email">
+							Email
+						</label>
 						<input
 							type="text"
 							id="email"
@@ -37,7 +41,9 @@ const Form = () => {
 							onChange={({ target }) => setEmail(target.value)}
 						/>
 
-						<label htmlFor="number">Contato</label>
+						<label className={styles.label} htmlFor="number">
+							Contato
+						</label>
 						<input
 							type="text"
 							id="number"
@@ -46,7 +52,9 @@ const Form = () => {
 							onChange={({ target }) => setNumber(target.value)}
 						/>
 
-						<label htmlFor="select">Assunto</label>
+						<label className={styles.label} htmlFor="select">
+							Assunto
+						</label>
 						<select
 							className="select"
 							id="select"
@@ -69,7 +77,9 @@ const Form = () => {
 						</select>
 						<br />
 						<br />
-						<label htmlFor="message">Mensagem</label>
+						<label className={styles.label} htmlFor="message">
+							Mensagem
+						</label>
 						<textarea
 							type="textarea"
 							id="message"

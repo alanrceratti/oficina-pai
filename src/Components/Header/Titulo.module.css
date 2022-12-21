@@ -13,18 +13,27 @@
 
 .texto {
 	color: rgb(20, 20, 20);
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: left;
 	border: 1px solid rgba(196, 196, 196, 0.2);
 	margin-bottom: 1rem;
 	line-height: 1rem;
+	display: block;
+}
+.paragrafo {
+	margin: 1rem 0 1rem 1rem;
+	text-align: left;
+}
+.paragrafo img {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
 }
 
 .geometria {
-	width: 40%;
-	height: 12rem;
-	margin-bottom: 1rem;
+	height: 11rem;
+	margin: auto auto;
 }
 
 .container {
@@ -45,13 +54,14 @@
 	.main {
 		padding: 0px;
 		width: auto;
+		height: 100%;
 		padding-bottom: 1rem;
 		box-shadow: 0 0 0 3px rgb(8, 90, 162);
 		background: url("../../Assets/bmw.jpg") no-repeat center center;
 		background-size: 100%;
 		background-size: cover;
-		background-position-y: 30%;
-		height: 14rem;
+		background-position-y: 25%;
+		aspect-ratio: 100 / 40;
 	}
 	.titulo {
 		font-size: 1.8rem;
@@ -59,43 +69,75 @@
 	}
 	.texto {
 		color: rgb(20, 20, 20);
-		font-size: 1rem;
-		font-family: Arial, Helvetica, sans-serif;
-		text-align: left;
-		border: 1px solid rgba(196, 196, 196, 0.2);
-		margin-bottom: 1rem;
-		line-height: 1rem;
-	}
-}
-
-/* Laptop */
-@media (min-width: 48rem) {
-}
-/* Desktop */
-@media (min-width: 85rem) {
-	.main {
-		padding: 0px;
-		width: auto;
-		padding-bottom: 2rem;
-		box-shadow: 0 0 0 3px rgb(8, 90, 162);
-		background: url("../../Assets/bmw.jpg") no-repeat center center;
-		background-size: 100%;
-		background-size: cover;
-		background-position-y: 20%;
-		height: 20rem;
-	}
-	.titulo {
-		font-size: 2.5rem;
-		margin-top: 4rem;
-		max-width: 1000px;
-	}
-	.texto {
-		color: rgb(20, 20, 20);
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-family: Arial, Helvetica, sans-serif;
 		text-align: left;
 		border: 1px solid rgba(196, 196, 196, 0.2);
 		margin-bottom: 1rem;
 		line-height: 1.5rem;
+	}
+	.geometria {
+		height: 18rem;
+		margin: auto auto;
+	}
+}
+
+/* Laptop */
+@media (min-width: 48rem) {
+	.geometria {
+		height: 23rem;
+		margin: auto auto;
+	}
+	.texto {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+		line-height: 1.8rem;
+	}
+	.titulo {
+		font-size: 2.5rem;
+		line-height: 5rem;
+		padding-top: 5rem;
+		max-width: 60rem;
+	}
+}
+/* Desktop */
+@media (min-width: 85rem) {
+	.main {
+		padding: 0px;
+		width: 100vw;
+		padding-bottom: 2rem;
+		box-shadow: 0 0 0 1px rgb(8, 90, 162);
+		background: url("../../Assets/bmw.jpg") no-repeat center center;
+		background-size: cover;
+		background-position-y: 15%;
+		height: 25rem;
+	}
+	.titulo {
+		font-size: 3rem;
+		line-height: 5rem;
+		padding-top: 5rem;
+		max-width: 60rem;
+	}
+	.texto {
+		color: rgb(20, 20, 20);
+		font-size: 1.8rem;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: left;
+		border: 1px solid rgba(196, 196, 196, 0.2);
+		margin: 1rem;
+		line-height: 2rem;
+	}
+	.paragrafo {
+		margin: 3rem 0 0 2rem;
+	}
+	.geometria {
+		margin-left: 5rem;
+		width: 20rem;
+		height: 30rem;
+		margin-bottom: 1rem;
+	}
+	.paragrafo img {
+		width: 3rem;
+		height: auto;
 	}
 }

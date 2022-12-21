@@ -116,13 +116,13 @@
 /* Tablet */
 @media (min-width: 26rem) {
 	.link {
-		font-size: 1rem;
+		font-size: 1.1rem;
 		display: inline-block;
 		color: white;
 		margin-top: 0.5rem;
 		border-radius: 0.4rem;
 		background: var(--blue);
-		padding: 0.4rem 0.5rem;
+		padding: 0.5rem 0.6rem;
 		box-sizing: border-box;
 		width: auto;
 		height: auto;
@@ -135,13 +135,13 @@
 /* Laptop */
 @media (min-width: 48rem) {
 	.link {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		display: inline-block;
 		color: white;
 		margin-top: 0.5rem;
 		border-radius: 0.4rem;
 		background: var(--blue);
-		padding: 0.5rem 0.7rem;
+		padding: 0.6rem 0.7rem;
 	}
 	a {
 		margin: 0.5rem;
@@ -156,7 +156,7 @@
 		margin-top: 0.5rem;
 		border-radius: 0.4rem;
 		background: var(--blue);
-		padding: 1rem 3rem;
+		padding: 0.7rem 1rem;
 	}
 	a {
 		margin: 0.8rem;

@@ -26,7 +26,6 @@
 	justify-content: center;
 	border: 1px solid transparent;
 	transition: 0.1s;
-	cursor: pointer;
 	margin-right: 0.5rem;
 }
 .servico h1 {
@@ -49,4 +48,53 @@
 	justify-content: center;
 	align-items: center;
 	grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 26rem) {
+	.servico img {
+		margin: 0.8rem;
+		min-width: 2rem;
+		max-width: 2rem;
+	}
+	.servico h1 {
+		padding: 0.6rem;
+		font-size: 1.25rem;
+		margin: 1rem;
+		min-height: 1rem;
+	}
+	.geometria {
+		height: 20rem;
+	}
+}
+@media (min-width: 48rem) {
+	.servico img {
+		margin: 0.8rem;
+		min-width: 2.7rem;
+		max-width: 2.7rem;
+	}
+	.servico h1 {
+		padding: 0.6rem;
+		font-size: 1.5rem;
+		margin: 1rem;
+		min-height: 1rem;
+	}
+	.geometria {
+		height: 25rem;
+	}
+}
+@media (min-width: 84rem) {
+	.servico img {
+		margin: 0.65rem;
+		min-width: 3rem;
+		max-width: 3rem;
+	}
+	.servico h1 {
+		padding: 0.75rem;
+		font-size: 2rem;
+		margin: 1rem;
+		min-height: 1rem;
+	}
+	.geometria {
+		height: 25rem;
+	}
 }

@@ -28,3 +28,49 @@
 	color: var(--blue);
 	-webkit-text-stroke: 1px rgba(1, 174, 231, 0.6);
 }
+
+@media (min-width: 26rem) {
+	.titulo2 {
+		height: 20rem;
+	}
+	.titulo2 h1 {
+		font-size: 2rem;
+	}
+
+	.titulo2 p {
+		margin-top: 4rem;
+		line-height: 4rem;
+		font-size: 1.5rem;
+	}
+}
+
+/* Laptop */
+@media (min-width: 48rem) {
+	.titulo2 {
+		height: 25rem;
+	}
+	.titulo2 h1 {
+		font-size: 2.5rem;
+	}
+
+	.titulo2 p {
+		margin-top: 7rem;
+		line-height: 4rem;
+		font-size: 2rem;
+	}
+}
+/* Desktop */
+@media (min-width: 85rem) {
+	.titulo2 {
+		height: 30rem;
+	}
+	.titulo2 h1 {
+		font-size: 3rem;
+	}
+
+	.titulo2 p {
+		margin-top: 7rem;
+		line-height: 4rem;
+		font-size: 3rem;
+	}
+}

@@ -5,7 +5,6 @@ textarea {
 	display: block;
 	border: 1px solid #ccc;
 	width: 100%;
-
 	border-radius: 4px;
 	background: #eee;
 	transition: 0.2s;
@@ -33,4 +32,26 @@ textarea:focus {
 Form {
 	width: 100%;
 	margin: 1rem;
+}
+
+.label,
+select {
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	font-family: var(--type-second);
+	font-size: 1rem;
+}
+
+textarea {
+	font-family: var(--type-second);
+	font-size: 1rem;
+	border: 1px solid #7d7d7d;
+}
+
+@media (min-width: 26rem) {
+}
+@media (min-width: 48) {
+}
+@media (min-width: 84) {
 }

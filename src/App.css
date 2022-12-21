@@ -73,6 +73,15 @@ a {
 	}
 }
 
+.mainContainer {
+	display: block;
+	max-width: 100%;
+	width: 100vw;
+	margin: 0px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
 /* @media (min-width: 26rem) {
 	.App-logo {
 		animation: App-logo-spin infinite 5s linear;

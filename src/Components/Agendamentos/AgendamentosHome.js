@@ -5,8 +5,7 @@ import styles from "./AgendamentosHome.module.css";
 const AgendamentosHome = () => {
 	return (
 		<>
-			<Header />
-			<div className={styles.texto}>
+			<div className={`${styles.texto} mainContainer`}>
 				<h1>
 					Esta página está sendo construida. <br /> Volte mais tarde.
 				</h1>

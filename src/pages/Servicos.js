@@ -5,7 +5,7 @@ import Localizacao from "../Components/Head/Localizacao";
 const Servicos = () => {
 	return (
 		<>
-			<section>
+			<section className="mainContainer">
 				<Header />
 				<Localizacao />
 			</section>

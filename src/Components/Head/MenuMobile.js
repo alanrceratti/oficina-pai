@@ -144,6 +144,9 @@ const MenuMobile = () => {
 							<ul
 								className={`${styles.menucontainer} ${styles.menucontainerActive}`}
 							>
+								<Link className={styles.link} to="/">
+									Inicio
+								</Link>
 								<Link
 									className={styles.link}
 									to="/agendamentos"
@@ -165,6 +168,9 @@ const MenuMobile = () => {
 							<div
 								className={`${styles.menucontainer} ${styles.menuopen}  ${styles.menucontainerActive}`}
 							>
+								<Link className={styles.link} to="/">
+									Inicio
+								</Link>
 								<Link
 									className={styles.link}
 									to="/agendamentos"
