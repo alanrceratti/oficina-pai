@@ -2,3 +2,22 @@
 	width: 90vw;
 	height: 50vh;
 }
+
+@media (min-width: 26rem) {
+	.iframe {
+		width: 80vw;
+		height: 50vh;
+	}
+}
+@media (min-width: 48rem) {
+	.iframe {
+		width: 80vw;
+		height: 50vh;
+	}
+}
+@media (min-width: 84rem) {
+	.iframe {
+		width: 80vw;
+		height: 50vh;
+	}
+}

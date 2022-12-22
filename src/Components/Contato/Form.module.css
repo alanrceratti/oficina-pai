@@ -50,8 +50,30 @@ textarea {
 }
 
 @media (min-width: 26rem) {
+	.form {
+		min-width: 25rem;
+		width: 50%;
+	}
 }
-@media (min-width: 48) {
+@media (min-width: 48rem) {
+	.form {
+		min-width: 30rem;
+		width: 35%;
+	}
 }
-@media (min-width: 84) {
+@media (min-width: 84rem) {
+	.form {
+		width: 40%;
+	}
+	Form {
+		width: 100%;
+	}
+	.label,
+	select {
+		width: 100%;
+		font-size: 1.25rem;
+	}
+	textarea {
+		font-size: 1.25rem;
+	}
 }
