@@ -2,10 +2,21 @@
 	color: white;
 	display: block;
 	text-align: center;
-	background: url("../../Assets/agendamento.jpg") no-repeat center center;
+	/* background: url("../../Assets/agendamento.jpg") no-repeat center center; */
 	background-size: cover;
 	width: auto;
 	height: 10rem;
+}
+.img {
+	width: 100vw;
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	aspect-ratio: 100/70;
+	object-fit: fill;
+	object-position: 0rem -3rem;
 }
 .titulo2 h1 {
 	font-size: 1.5rem;
@@ -13,15 +24,16 @@
 	text-shadow: 2px 2px #000000cb;
 	font-family: var(--type-first);
 	color: var(--main-white);
+	padding-top: 1rem;
 }
 
 .titulo2 p {
-	margin-top: 2.5rem;
 	line-height: 1rem;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0);
 	color: var(--orange);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.905);
 }
 
 .titulo2 a {
@@ -30,47 +42,67 @@
 }
 
 @media (min-width: 26rem) {
-	.titulo2 {
-		height: 20rem;
+	.img {
+		width: 100%;
+		height: 150%;
+		object-fit: fill;
 	}
 	.titulo2 h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
+		margin-bottom: 4rem;
 	}
 
 	.titulo2 p {
-		margin-top: 4rem;
-		line-height: 4rem;
-		font-size: 1.5rem;
+		margin-top: 1rem;
+		font-size: 1.25rem;
+	}
+	.titulo2 {
+		width: 100%;
+		height: 15rem;
 	}
 }
 
 /* Laptop */
 @media (min-width: 48rem) {
-	.titulo2 {
-		height: 25rem;
+	.img {
+		width: 120%;
+		height: 130%;
+		object-fit: fill;
 	}
 	.titulo2 h1 {
-		font-size: 2.5rem;
+		font-size: 2.25rem;
+		margin-bottom: 5rem;
 	}
 
 	.titulo2 p {
-		margin-top: 7rem;
-		line-height: 4rem;
-		font-size: 2rem;
+		margin-top: 3rem;
+
+		font-size: 1.75rem;
+	}
+	.titulo2 {
+		width: 100%;
+		height: 23rem;
 	}
 }
 /* Desktop */
 @media (min-width: 85rem) {
-	.titulo2 {
-		height: 30rem;
+	.img {
+		width: 120%;
+		height: 130%;
+		object-fit: fill;
 	}
 	.titulo2 h1 {
 		font-size: 3rem;
+		margin-bottom: 8rem;
 	}
 
 	.titulo2 p {
-		margin-top: 7rem;
-		line-height: 4rem;
-		font-size: 3rem;
+		margin-top: 3rem;
+
+		font-size: 2.25rem;
+	}
+	.titulo2 {
+		width: 100%;
+		height: 28rem;
 	}
 }

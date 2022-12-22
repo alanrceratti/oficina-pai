@@ -4,6 +4,7 @@
 .footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	width: 90%;
 	justify-content: center;
 	align-items: center;
@@ -17,25 +18,42 @@
 	background: white;
 	grid-column: 1/3;
 }
-.footer p {
-	margin-bottom: 0.4rem;
-}
-.footer h1 {
-	font-size: 0.5rem;
-	color: #e6e6e6;
-	text-align: center;
-	margin-bottom: 0.5rem;
-	margin-top: 0.5rem;
-}
+
 .horario {
 	grid-column: 1/2;
+	grid-row: 1/2;
+	color: #e6e6e6;
+	text-align: center;
+	font-size: 0.8rem;
+	margin: 0px;
+	margin-right: 0.5rem;
 }
+.horario2 {
+	grid-row: 2/3;
+	color: #e6e6e6;
+	text-align: center;
+	font-size: 0.6rem;
+	margin: 0px;
+	margin-top: 4px;
+}
+
 .contato {
+	margin: 0px;
 	grid-column: 2/3;
+	grid-row: 1/2;
+	color: #e6e6e6;
+	font-size: 0.8rem;
+}
+.contato p {
+	margin: 0px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	color: #e6e6e6;
+	font-size: 0.5rem;
 }
 span {
 	border-left: 1px solid rgb(2, 132, 246);
-	height: 2rem;
+	height: 1rem;
 	position: absolute;
 	left: 50%;
 	margin-left: -3px;
@@ -54,39 +72,58 @@ span {
 
 @media (min-width: 26rem) {
 	.footer h1 {
-		font-size: 0.6rem;
-		color: var(--main-white);
-		text-align: center;
-		margin-bottom: 0.5rem;
-		margin-top: 0.5rem;
+		font-size: 1.25rem;
+		margin: 0px;
+	}
+	.footer p {
+		font-size: 1rem;
+		margin: 0px;
+		margin-bottom: 0.7rem;
+	}
+	.icons img {
+		width: 2.5rem;
+		margin: 0.8rem;
+	}
+	span {
+		height: 6rem;
 	}
 }
 
 /* Laptop */
 @media (min-width: 48rem) {
 	.footer h1 {
-		font-size: 0.9rem;
-		color: var(--main-white);
-		text-align: center;
-		margin-bottom: 0.5rem;
-		margin-top: 0.5rem;
+		font-size: 1.5rem;
+		margin: 0px;
+	}
+	.footer p {
+		font-size: 1.2rem;
+		margin: 0px;
+		margin-bottom: 0.7rem;
 	}
 	.icons img {
-		width: 2.3rem;
-		margin: 0.9rem;
+		width: 2.8rem;
+		margin: 0.8rem;
+	}
+	span {
+		height: 7rem;
 	}
 }
 /* Desktop */
 @media (min-width: 84rem) {
 	.footer h1 {
-		font-size: 1.2rem;
-		color: var(--main-white);
-		text-align: center;
-		margin-bottom: 0.5rem;
-		margin-top: 0.5rem;
+		font-size: 1.8rem;
+		margin: 0px;
+	}
+	.footer p {
+		font-size: 1.5rem;
+		margin: 0px;
+		margin-bottom: 0.7rem;
 	}
 	.icons img {
 		width: 3.3rem;
 		margin: 0.8rem;
+	}
+	span {
+		height: 10rem;
 	}
 }

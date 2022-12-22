@@ -8,19 +8,22 @@ const Footer = () => {
 	return (
 		<section className={styles.footermain}>
 			<div className={styles.footer}>
-				<h1 className={styles.horario}>
-					<p>Horários de atendimento:</p>
+				<h1 className={styles.horario}>Horários de atendimento:</h1>
+				<p className={styles.horario2}>
 					Seg - Sexta das 8:00 às 18:00 <br />
 					Sábado das 8:00 às 13:00 <br />
 					Domingo - Fechado
-				</h1>
+				</p>
+
 				<span></span>
-				<h1 className={styles.contato}>
-					<p>Contatos: </p>
+
+				<h1 className={styles.contato}>Contatos: </h1>
+
+				<p className={styles.horario2}>
 					Fixo: (55) 3221-2273 <br />
 					Celular: (55)99996-5450 <br />
 					Email: rogerio-ceratti@hotmail.com
-				</h1>
+				</p>
 			</div>
 			<ul className={styles.icons}>
 				<li>

@@ -3,10 +3,11 @@
 }
 
 .logoImg {
-	width: 100%;
+	width: 95%;
 	background-color: #f5fffa;
 	height: 5rem;
 	height: fit-content;
+	margin: 0 auto;
 }
 
 .logo {
