@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Servicos/Titulo.module.css";
 import faq from "./faq.json";
+import Arrow from "../../Assets/arroww.png";
 
 const Titulo = () => {
 	const data = { faq };
@@ -34,7 +35,11 @@ const Titulo = () => {
 									>
 										{question.question}
 									</h3>
-									<span className={styles.seta}>⭝</span>
+									<img
+										className={styles.seta}
+										src={Arrow}
+										alt="seta"
+									/>
 
 									<p
 										className={`${
