@@ -1,17 +1,43 @@
 .perguntas li {
-	width: 100%;
+	width: 90%;
 	margin: 1rem;
 	text-align: left;
+	cursor: pointer;
 }
-.perguntas p {
+.resposta {
 	display: none;
-	margin: 0px;
+	margin: 0.5rem;
 	padding: 0px;
+	width: 100%;
+	text-align: left;
+	font-family: var(--type-second);
+	font-size: 0.875rem;
+}
+.respostaActive {
+	display: block;
+	margin: 0.5rem;
+	padding: 0px;
+	width: 100%;
+	text-align: left;
+	font-family: var(--type-second);
+	font-size: 0.875rem;
 }
 .perguntas h3 {
 	display: inline;
 	margin: 0px;
 	padding: 0px;
+}
+.perguntas h3::before {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 4px;
+	background-color: var(--orange);
+	opacity: 0.7;
+	z-index: -1;
+	margin-left: -0.3rem;
 }
 
 .seta {

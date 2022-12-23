@@ -2,6 +2,16 @@ import React from "react";
 import styles from "../Servicos/Titulo.module.css";
 
 const Titulo = () => {
+	const [isActive, setIsActive] = React.useState(null);
+	const [isShow, setIsShow] = React.useState("");
+
+	function handleAnswer() {
+		setIsActive(!isActive);
+	}
+	function handleShow(event) {
+		setIsShow(event.CurrentTarget);
+	}
+
 	return (
 		<section className="container">
 			<h1>
@@ -15,46 +25,65 @@ const Titulo = () => {
 					</h2>
 					<ul className={styles.perguntas}>
 						<li>
-							<h3>Por que é importante?</h3>
+							<h3 onClick={handleAnswer}>
+								Por que é importante?
+							</h3>
 							<span className={styles.seta}>⭝</span>
-							<p>
+
+							<p
+								className={`${
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								} `}
+							>
 								O balanceamento e a geometria de um veículo são
 								importantes porque afetam a segurança, o
-								desempenho e a durabilidade do veículo. O
-								balanceamento de um veículo se refere à
+								desempenho e a durabilidade do veículo.
+								<br /> <br />
+								O balanceamento de um veículo se refere à
 								distribuição uniforme do peso dos pneus e rodas
 								em todas as direções. Quando um veículo está
 								balanceado corretamente, ele se desloca de forma
 								suave e estável, o que pode ajudar a reduzir o
 								desgaste excessivo dos pneus e a prolongar a
-								vida útil do conjunto de rodas e pneus. Além
-								disso, um veículo bem balanceado é mais fácil de
-								manobrar e pode oferecer uma experiência de
-								condução mais confortável. A geometria de um
-								veículo se refere à configuração das rodas,
-								suspensão e direção em relação ao veículo. A
-								geometria correta é essencial para garantir que
-								o veículo se comporte de forma previsível e
+								vida útil do conjunto de rodas e pneus.
+								<br /> <br />
+								Além disso, um veículo bem balanceado é mais
+								fácil de manobrar e pode oferecer uma
+								experiência de condução mais confortável. A
+								geometria de um veículo se refere à configuração
+								das rodas, suspensão e direção em relação ao
+								veículo. <br /> <br />
+								A geometria correta é essencial para garantir
+								que o veículo se comporte de forma previsível e
 								segura quando estiver em movimento. Por exemplo,
 								se a geometria do veículo estiver desalinhada,
 								isso pode afetar a direção e a estabilidade do
 								veículo, o que pode aumentar o risco de
-								acidentes. Além disso, a geometria incorreta
-								pode levar ao desgaste anormal dos pneus e a
-								problemas com a suspensão. Em resumo, o
-								balanceamento e a geometria são importantes para
-								garantir que um veículo se desloque de forma
-								segura e eficiente, e para prolongar a vida útil
-								do conjunto de rodas e pneus.
+								acidentes. <br /> <br />
+								Adicionalmente, a geometria incorreta pode levar
+								ao desgaste anormal dos pneus e a problemas com
+								a suspensão. Em resumo, o balanceamento e a
+								geometria são importantes para garantir que um
+								veículo se desloque de forma segura e eficiente,
+								e para prolongar a vida útil do conjunto de
+								rodas e pneus.
 							</p>
 						</li>
 						<li>
-							<h3>
+							<h3 onClick={handleAnswer}>
 								Com que frequência devo verificar o
 								Balanceamento e Geometria do meu veículo?
 							</h3>
 							<span className={styles.seta}>⭝</span>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								A frequência com que o balanceamento e a
 								geometria de um veículo devem ser verificados e
 								corrigidos depende de vários fatores, como o
@@ -81,9 +110,15 @@ const Titulo = () => {
 							</p>
 						</li>
 						<li>
-							<h3> Qual o custo médio?</h3>
+							<h3 onClick={handleAnswer}> Qual o custo médio?</h3>
 							<span className={styles.seta}>⭝</span>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								O custo médio para o balanceamento e a geometria
 								de um veículo pode variar bastante, dependendo
 								de vários fatores, como o tipo de veículo, o
@@ -99,9 +134,17 @@ const Titulo = () => {
 					</h2>
 					<ul className={styles.perguntas}>
 						<li>
-							<h3>Por que é importante?</h3>
+							<h3 onClick={handleAnswer}>
+								Por que é importante?
+							</h3>
 							<span className={styles.seta}>⭝</span>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								O alinhamento de eixo traseiro de um veículo é
 								importante porque afeta a direção, a
 								estabilidade e o desempenho do veículo. Quando
@@ -126,14 +169,20 @@ const Titulo = () => {
 							</p>
 						</li>
 						<li>
-							<h3>
+							<h3 onClick={handleAnswer}>
 								Com que frequência devo verificar o Alinhamento
 								de Eixo traseiro do meu veículo?
 							</h3>
 							<span className={styles.seta}>⭝</span>
 						</li>
 						<li>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								Alguns fabricantes de veículos recomendam
 								verificações a cada 10.000 a 20.000 km, enquanto
 								outros podem recomendar verificações mais
@@ -145,9 +194,15 @@ const Titulo = () => {
 								que podem indicar algum problema no eixo
 								traseiro.
 							</p>
-							<h3> Qual o custo médio?</h3>
+							<h3 onClick={handleAnswer}> Qual o custo médio?</h3>
 							<span className={styles.seta}>⭝</span>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								O custo médio para o alinhamento de eixo
 								traseiro de um veículo pode variar bastante,
 								dependendo de vários fatores, como o tipo de
@@ -164,11 +219,19 @@ const Titulo = () => {
 					</h2>
 					<ul className={styles.perguntas}>
 						<li>
-							<h3>Por que é importante?</h3>
+							<h3 onClick={handleAnswer}>
+								Por que é importante?
+							</h3>
 							<span className={styles.seta}>⭝</span>
 						</li>
 						<li>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								A troca de óleo e filtro é uma manutenção
 								importante para garantir o bom funcionamento do
 								motor do seu veículo. O óleo lubrifica e protege
@@ -181,14 +244,20 @@ const Titulo = () => {
 								adequada e está protegido contra danos.
 							</p>
 
-							<h3>
+							<h3 onClick={handleAnswer}>
 								Com que frequência realizar a troca de óleo e
 								filtro do meu veículo?
 							</h3>
 							<span className={styles.seta}>⭝</span>
 						</li>
 						<li>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								A frequência com que a troca de óleo e filtro
 								deve ser realizada depende do tipo de veículo,
 								do tipo de óleo e de outros fatores. Alguns
@@ -202,9 +271,15 @@ const Titulo = () => {
 								filtro regularmente e trocar o óleo e o filtro
 								sempre que forem necessários.
 							</p>
-							<h3> Qual o custo médio?</h3>
+							<h3 onClick={handleAnswer}> Qual o custo médio?</h3>
 							<span className={styles.seta}>⭝</span>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								O custo da troca de óleo e filtro pode variar
 								bastante, dependendo do tipo de veículo, do tipo
 								de óleo e de outros fatores. Aqui na nossa
@@ -219,11 +294,19 @@ const Titulo = () => {
 					</h2>
 					<ul className={styles.perguntas}>
 						<li>
-							<h3>Por que é importante?</h3>
+							<h3 onClick={handleAnswer}>
+								Por que é importante?
+							</h3>
 							<span className={styles.seta}>⭝</span>
 						</li>
 						<li>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								A manutenção preventiva é um conjunto de tarefas
 								de manutenção realizadas regularmente para
 								garantir o bom funcionamento e a longevidade de
@@ -241,14 +324,20 @@ const Titulo = () => {
 								balanceamento das rodas
 							</p>
 
-							<h3>
+							<h3 onClick={handleAnswer}>
 								Com que frequência realizar a manutenção
 								preventiva do meu veículo?
 							</h3>
 							<span className={styles.seta}>⭝</span>
 						</li>
 						<li>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								A frequência com que a manutenção preventiva
 								deve ser realizada depende do tipo de veículo,
 								do estilo de condução e de outros fatores.
@@ -260,9 +349,15 @@ const Titulo = () => {
 								fabricante do veículo quanto à frequência de
 								manutenção preventiva.
 							</p>
-							<h3> Qual o custo médio?</h3>
+							<h3 onClick={handleAnswer}> Qual o custo médio?</h3>
 							<span className={styles.seta}>⭝</span>
-							<p>
+							<p
+								className={
+									isActive
+										? styles.respostaActive
+										: styles.resposta
+								}
+							>
 								O custo da manutenção preventiva pode variar
 								bastante, dependendo do tipo de veículo, da
 								complexidade da tarefa, quantidade de
