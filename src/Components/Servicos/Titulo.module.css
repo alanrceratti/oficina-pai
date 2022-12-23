@@ -1,0 +1,21 @@
+.perguntas li {
+	width: 100%;
+	margin: 1rem;
+	text-align: left;
+}
+.perguntas p {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}
+.perguntas h3 {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+
+.seta {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}

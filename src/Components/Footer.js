@@ -15,7 +15,7 @@ const Footer = () => {
 					Domingo - Fechado
 				</p>
 
-				<span></span>
+				<span className={styles.vertical_line}></span>
 
 				<h1 className={styles.contato}>Contatos: </h1>
 
