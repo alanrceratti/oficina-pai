@@ -1,6 +1,10 @@
+.titulo {
+	font-size: 1.5rem;
+	font-family: var(--type-first);
+}
 .perguntas li {
 	width: fit-content;
-	margin: 1rem;
+	margin: 0.5rem;
 	text-align: left;
 	cursor: pointer;
 	transition: 0.3s;
@@ -23,7 +27,7 @@
 }
 
 .respostaActive {
-	transition: all 0.3s;
+	transition: all 1s;
 	transform: translateY(0);
 	overflow: visible;
 	opacity: 1;
@@ -37,12 +41,25 @@
 	white-space: pre-line;
 	/* white-space para fazer o \n funcionar no json */
 }
-
+.nome_servico {
+	font-size: 1.3rem;
+	margin: 2rem 0 0rem 0;
+}
+.nome_servico::before {
+	content: "";
+	max-width: auto;
+	margin: 0.5rem auto;
+	height: 0.1rem;
+	background: var(--orange);
+	display: block;
+	padding-top: 1rem;
+}
 .perguntas h3 {
 	display: inline;
 	margin: 0px;
 	padding: 0px;
 	position: relative;
+	font-size: 1rem;
 }
 .perguntas h3::before {
 	content: " ";
@@ -54,17 +71,104 @@
 	opacity: 0.7;
 	z-index: -1;
 	margin-left: -0.3rem;
+	margin-top: 0.3rem;
 }
 
 .seta {
-	padding-top: 10px;
 	padding: 0px;
-	display: inline;
+	position: absolute;
 	width: 1rem;
+	height: auto;
 }
 @media (min-width: 26rem) {
+	.titulo {
+		font-size: 1.4rem;
+		font-family: var(--type-first);
+	}
+	.perguntas h3::before {
+		width: 1.1rem;
+		height: 1.1rem;
+	}
+	.resposta {
+		font-size: 0.875rem;
+	}
+
+	.respostaActive {
+		font-size: 0.875rem;
+	}
+	.nome_servico {
+		font-size: 1.1rem;
+	}
+	.nome_servico::before {
+		margin: 0.5rem auto;
+		height: 0.5rem;
+	}
+	.perguntas h3 {
+		font-size: 1rem;
+	}
+	.seta {
+		width: 1rem;
+	}
 }
 @media (min-width: 48rem) {
+	.titulo {
+		font-size: 1.7rem;
+		font-family: var(--type-first);
+	}
+	.perguntas h3::before {
+		width: 1.2rem;
+		height: 1.2rem;
+		margin-top: 0.1rem;
+	}
+	.resposta {
+		font-size: 1rem;
+	}
+
+	.respostaActive {
+		font-size: 1rem;
+	}
+	.nome_servico {
+		font-size: 1.3rem;
+	}
+	.nome_servico::before {
+		margin: 0.5rem auto;
+		height: 0.5rem;
+	}
+	.perguntas h3 {
+		font-size: 1.1rem;
+	}
+	.seta {
+		width: 1.1rem;
+	}
 }
 @media (min-width: 84rem) {
+	.titulo {
+		font-size: 2rem;
+		font-family: var(--type-first);
+	}
+	.perguntas h3::before {
+		width: 1.2rem;
+		height: 1.2rem;
+		margin-top: 0.2rem;
+	}
+	.resposta {
+		font-size: 1.1rem;
+	}
+
+	.respostaActive {
+		font-size: 1.1rem;
+	}
+	.nome_servico {
+		font-size: 1.3rem;
+	}
+	.nome_servico::before {
+		margin: 0.5rem auto;
+		height: 0.5rem;
+	}
+	.perguntas h3 {
+		font-size: 1.3rem;
+	}
+	.seta {
+		width: 1.5rem;
+	}
 }

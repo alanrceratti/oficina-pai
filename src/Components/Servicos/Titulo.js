@@ -14,7 +14,7 @@ const Titulo = () => {
 
 	return (
 		<section className="container">
-			<h1>
+			<h1 className={styles.titulo}>
 				Conheça alguns de nossos serviços e a importancia de cada um
 				para o seu veículo:
 			</h1>
@@ -22,7 +22,7 @@ const Titulo = () => {
 				{data.faq.map((category) => (
 					<li key={category.category}>
 						<h2 className={styles.nome_servico}>
-							{category.category}
+							{category.category}:
 						</h2>
 						<ul className={styles.perguntas}>
 							{category.questions.map((question) => (
@@ -40,7 +40,6 @@ const Titulo = () => {
 										src={Arrow}
 										alt="seta"
 									/>
-
 									<p
 										className={`${
 											isActive === question.id &&
