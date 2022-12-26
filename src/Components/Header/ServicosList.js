@@ -4,7 +4,7 @@ import Oil from "../../Assets/oil.png";
 import Suspension from "../../Assets/suspension.png";
 import Service from "../../Assets/service.png";
 import Eixo from "../../Assets/eixo.png";
-import Geometria from "../../Assets/geometria.png";
+import Geometria from "../../Assets/geometria.jpg";
 
 const ServicosList = () => {
 	return (

@@ -4,7 +4,6 @@
 }
 .servi {
 	background-color: var(--main-white);
-
 	padding: 0.5rem;
 	width: auto;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
@@ -41,6 +40,7 @@
 	width: 100%;
 	grid-column: 2/3;
 	height: 12rem;
+	box-shadow: 5px 5px 5px rgb(22, 22, 22);
 }
 
 .maincontainer {

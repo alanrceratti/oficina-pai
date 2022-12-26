@@ -19,24 +19,32 @@ const Titulo = () => {
 						src={EixoTraseiro}
 						alt="geometria"
 					/>
-					<p className={`${styles.texto} container`}>
-						<p className={styles.paragrafo}>
+					<div className={`${styles.paragrafo} container`}>
+						<p>
 							<img src={Checkmark} alt="mark" /> Somos
 							especialistas em geometria e balanceamento.
 						</p>
 
-						<p className={styles.paragrafo}>
+						<p>
 							<img src={Checkmark} alt="mark" /> Uma das únicas
 							oficinas a oferecer o serviço de alinhamento de eixo
 							traseiro, com qualidade e segurança que você merece.
 						</p>
 
-						<p className={styles.paragrafo}>
-							<img src={Checkmark} alt="mark" /> Profissionais com
-							mais de 20 anos de experiência no ramo automotivo,
-							seu carro não poderia estar em um lugar melhor!
+						<p>
+							<img src={Checkmark} alt="mark" /> Há mais de 20
+							anos de experiência no ramo automotivo.
 						</p>
-					</p>
+						<p>
+							<img src={Checkmark} alt="mark" /> Trabalho com
+							rapidez e eficiência para minimizar o tempo de
+							espera dos nossos clientes.
+						</p>
+						<p>
+							<img src={Checkmark} alt="mark" /> Garantia em todos
+							os serviços realizados.
+						</p>
+					</div>
 				</div>
 			</section>
 		</>

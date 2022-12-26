@@ -5,10 +5,10 @@ import Arrow from "../../Assets/arroww.png";
 
 const Titulo = () => {
 	const data = { faq };
-	const [isActive, setIsActive] = React.useState(null);
+	const [isActive, setIsActive] = React.useState([]);
 	const [isVisible, setIsVisible] = React.useState(null);
 
-	function handleShow() {
+	function handleVisible() {
 		setIsVisible(!isVisible);
 	}
 
@@ -29,8 +29,8 @@ const Titulo = () => {
 								<li key={question.question}>
 									<h3
 										onClick={() => {
-											handleShow(!isVisible);
 											setIsActive(question.id);
+											handleVisible(!isVisible);
 										}}
 									>
 										{question.question}
@@ -43,7 +43,7 @@ const Titulo = () => {
 									<p
 										className={`${
 											isActive === question.id &&
-											isVisible
+											isVisible === true
 												? styles.respostaActive
 												: styles.resposta
 										} `}
