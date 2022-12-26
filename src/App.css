@@ -1,4 +1,5 @@
 body {
+	overflow-x: hidden;
 	resize: block;
 	display: block;
 	max-width: fit-content;
