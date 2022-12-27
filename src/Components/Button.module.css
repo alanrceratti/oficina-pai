@@ -1,12 +1,10 @@
 .botao {
 	display: block;
 	font-weight: bold;
-	font-size: 0.875rem;
 	color: white;
 	background-color: var(--orange);
-	padding: 0.2rem 0.4rem;
 	font-family: var(--type-first);
-	border-radius: 0.4rem;
+	border-radius: 0.5rem;
 	border: none;
 	box-sizing: border-box;
 	transition: 0.1s;
@@ -16,7 +14,8 @@
 .botao:hover,
 .botao:focus {
 	outline: none;
-	box-shadow: 0 0 0 3px #fea, 0 0 0 4px #fb1;
+	box-shadow: 0 0 0 1px var(--blue);
+	background: #f95b00;
 }
 
 .botao:disabled {

@@ -13,6 +13,7 @@ const MenuMobile = () => {
 	const [isActive, setIsActive] = React.useState(false);
 	const { pathname } = useLocation;
 	const ref = useRef();
+	const url = window.location.pathname.split("/").pop();
 
 	// --------------------------------------------
 	// verificar toque fora do menu para fechar
@@ -73,7 +74,7 @@ const MenuMobile = () => {
 	useEffect(() => {
 		window.addEventListener("scroll", listenToScroll);
 		return () => window.removeEventListener("scroll", listenToScroll);
-	}, []);
+	});
 	// --------------------------------------------
 
 	// Fechar menu ao clicar no item
@@ -190,6 +191,7 @@ const MenuMobile = () => {
 						)}
 					</nav>
 				</section>
+				<span id="stickmenu"></span>
 			</section>
 		</>
 	);

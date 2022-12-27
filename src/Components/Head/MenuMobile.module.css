@@ -18,6 +18,7 @@
 		padding: 0.3rem;
 		font-family: var(--type-first);
 	}
+
 	.link::after {
 		content: "";
 		display: flex;
@@ -130,6 +131,12 @@
 	a {
 		margin: 0.5rem;
 	}
+	.link:hover,
+	.link:focus {
+		outline: none;
+		box-shadow: 0 0 0 1px var(--blue);
+		background: #cc4b00c7;
+	}
 }
 
 /* Laptop */
@@ -146,6 +153,12 @@
 	a {
 		margin: 0.5rem;
 	}
+	.link:hover,
+	.link:focus {
+		outline: none;
+		box-shadow: 0 0 0 1px var(--blue);
+		background: #cc4b00c7;
+	}
 }
 /* Desktop */
 @media (min-width: 84rem) {
@@ -160,5 +173,11 @@
 	}
 	a {
 		margin: 0.8rem;
+	}
+	.link:hover,
+	.link:focus {
+		outline: none;
+		box-shadow: 0 0 0 1px var(--blue);
+		background: #cc4b00c7;
 	}
 }

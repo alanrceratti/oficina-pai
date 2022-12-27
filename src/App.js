@@ -6,7 +6,7 @@ import Agendamentos from "./pages/Agendamentos";
 import Sobre from "./pages/Sobre";
 import Servicos from "./pages/Servicos";
 import Contato from "./pages/Contato";
-import Header from "./Components/Head/Header";
+import Cadastro from "./pages/Cadastro";
 
 function App() {
 	return (
@@ -18,6 +18,7 @@ function App() {
 					<Route path="/servicos" element={<Servicos />} />
 					<Route path="/sobre" element={<Sobre />} />
 					<Route path="/contato" element={<Contato />} />
+					<Route path="/cadastro" element={<Cadastro />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

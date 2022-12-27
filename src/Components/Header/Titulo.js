@@ -2,16 +2,28 @@ import React from "react";
 import styles from "./Titulo.module.css";
 import Checkmark from "../../Assets/Checkmark.png";
 import EixoTraseiro from "../../Assets/eixo-traseiro.jpg";
+import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const Titulo = () => {
+	const navigate = useNavigate();
+	const navigateCadastro = () => {
+		// 👇️ navigate to /
+		navigate("/cadastro");
+	};
 	return (
 		<>
-			<section id="stickmenu" className="animeLeft">
+			<section className="animeLeft">
 				<div className={`${styles.main} container `}>
 					<h1 className={`${styles.titulo}`}>
 						Oficina especializada em Geometria e Balanceamento de
 						veículos.
 					</h1>
+					<Button
+						onClick={navigateCadastro}
+						className={styles.agendar}
+						name="Agendar Agora"
+					/>
 				</div>
 				<div className={`${styles.container} container`}>
 					<img

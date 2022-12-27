@@ -11,6 +11,12 @@
 	font-family: var(--type-first);
 }
 
+.agendar {
+	margin: 0 auto;
+	padding: 0.4rem 0.7rem;
+	font-size: 0.875rem;
+}
+
 .paragrafo p {
 	margin: 1rem 0 1rem 1rem;
 	text-align: left;
@@ -45,7 +51,7 @@
 	box-shadow: 0 0 0 3px rgb(8, 90, 162);
 	background: url("../../Assets/bmw.jpg") no-repeat center center;
 	background-size: cover;
-	height: 12rem;
+	height: 13rem;
 }
 
 @media (min-width: 26rem) {
@@ -136,5 +142,10 @@
 	.paragrafo img {
 		width: 1rem;
 		height: auto;
+	}
+	.agendar {
+		margin: 0 auto;
+		padding: 0.7rem 1rem;
+		font-size: 1.5rem;
 	}
 }
