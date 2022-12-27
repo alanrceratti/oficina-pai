@@ -1,5 +1,5 @@
 .titulo {
-	font-size: 1.5rem;
+	font-size: 1.15rem;
 	font-family: var(--type-first);
 }
 .perguntas li {
@@ -42,7 +42,7 @@
 	/* white-space para fazer o \n funcionar no json */
 }
 .nome_servico {
-	font-size: 1.3rem;
+	font-size: 1rem;
 	margin: 2rem 0 0rem 0;
 }
 .nome_servico::before {
@@ -59,7 +59,7 @@
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	font-size: 1rem;
+	font-size: 0.875rem;
 }
 .perguntas h3::before {
 	content: " ";
@@ -82,7 +82,7 @@
 }
 @media (min-width: 26rem) {
 	.titulo {
-		font-size: 1.4rem;
+		font-size: 1.25rem;
 		font-family: var(--type-first);
 	}
 	.perguntas h3::before {

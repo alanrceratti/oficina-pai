@@ -6,6 +6,7 @@ import Agendamentos from "./pages/Agendamentos";
 import Sobre from "./pages/Sobre";
 import Servicos from "./pages/Servicos";
 import Contato from "./pages/Contato";
+import Header from "./Components/Head/Header";
 
 function App() {
 	return (
