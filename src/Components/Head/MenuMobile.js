@@ -148,12 +148,12 @@ const MenuMobile = () => {
 								<Link className={styles.link} to="/">
 									Inicio
 								</Link>
-								<Link
+								{/* <Link
 									className={styles.link}
 									to="/agendamentos"
 								>
 									Agendamentos
-								</Link>
+								</Link> */}
 								<Link className={styles.link} to="/servicos">
 									Serviços
 								</Link>
@@ -172,12 +172,12 @@ const MenuMobile = () => {
 								<Link className={styles.link} to="/">
 									Inicio
 								</Link>
-								<Link
+								{/* <Link
 									className={styles.link}
 									to="/agendamentos"
 								>
 									Agendamentos
-								</Link>
+								</Link> */}
 								<Link className={styles.link} to="/servicos">
 									Serviços
 								</Link>

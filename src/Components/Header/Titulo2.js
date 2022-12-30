@@ -10,8 +10,8 @@ const Titulo2 = () => {
 				<h1>Agendamento ONLINE!</h1>
 				<p>Sem tempo para ligar?</p>
 				<p>
-					Faça seu cadastro <a href="/cadastro">aqui</a> e agende um
-					horário para o seu veículo.
+					Preencha o formulário <a href="/contato">aqui</a> e agende
+					um horário para o seu veículo.
 				</p>
 			</div>
 		</>

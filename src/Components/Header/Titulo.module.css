@@ -92,6 +92,11 @@
 		margin: 0 auto;
 		padding-bottom: 4rem;
 	}
+	.agendar {
+		margin: 0 auto;
+		padding: 0.4rem 0.7rem;
+		font-size: 1rem;
+	}
 }
 
 /* Laptop */
@@ -120,6 +125,11 @@
 		border-right: 1px solid rgba(196, 196, 196, 0.3);
 		margin: 0 auto;
 		padding-bottom: 2rem;
+	}
+	.agendar {
+		margin: 0 auto;
+		padding: 0.4rem 0.7rem;
+		font-size: 1.25rem;
 	}
 }
 /* Desktop */

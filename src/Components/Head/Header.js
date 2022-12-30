@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import LogoSF from "../../Assets/logosemfundoazul.png";
 import Localizacao from "./Localizacao";
 import MenuMobile from "./MenuMobile";
+import Login from "../../pages/Login";
 
 const Header = () => {
 	return (
@@ -15,6 +16,7 @@ const Header = () => {
 					</a>
 				</div>
 				<MenuMobile />
+				<Login />
 			</section>
 		</>
 	);

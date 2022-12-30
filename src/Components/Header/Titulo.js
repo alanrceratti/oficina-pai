@@ -7,9 +7,9 @@ import { useNavigate } from "react-router-dom";
 
 const Titulo = () => {
 	const navigate = useNavigate();
-	const navigateAgendamentos = () => {
+	const navigateContato = () => {
 		// 👇️ navigate to /
-		navigate("/agendamentos");
+		navigate("/Contato");
 	};
 	return (
 		<>
@@ -20,7 +20,7 @@ const Titulo = () => {
 						veículos.
 					</h1>
 					<Button
-						onClick={navigateAgendamentos}
+						onClick={navigateContato}
 						className={styles.agendar}
 						name="Agendar Agora"
 					/>

@@ -44,6 +44,7 @@
 .nome_servico {
 	font-size: 1rem;
 	margin: 2rem 0 0rem 0;
+	text-decoration: underline;
 }
 .nome_servico::before {
 	content: "";
@@ -80,6 +81,12 @@
 	width: 1rem;
 	height: auto;
 }
+.setaActive {
+	width: 1rem;
+	transform: scaleX(-1);
+	transform: rotate(180deg);
+	transition: 0.3s;
+}
 @media (min-width: 26rem) {
 	.titulo {
 		font-size: 1.25rem;
@@ -98,6 +105,7 @@
 	}
 	.nome_servico {
 		font-size: 1.1rem;
+		text-decoration: underline;
 	}
 	.nome_servico::before {
 		margin: 0.5rem auto;
@@ -108,6 +116,12 @@
 	}
 	.seta {
 		width: 1rem;
+	}
+	.setaActive {
+		width: 1rem;
+		transform: scaleX(-1);
+		transform: rotate(180deg);
+		transition: 0.3s;
 	}
 }
 @media (min-width: 48rem) {
@@ -129,6 +143,7 @@
 	}
 	.nome_servico {
 		font-size: 1.3rem;
+		text-decoration: underline;
 	}
 	.nome_servico::before {
 		margin: 0.5rem auto;
@@ -140,6 +155,12 @@
 	.seta {
 		width: 1.1rem;
 	}
+	.setaActive {
+		width: 1.1rem;
+		transform: scaleX(-1);
+		transform: rotate(180deg);
+		transition: 0.3s;
+	}
 }
 @media (min-width: 84rem) {
 	.titulo {
@@ -149,7 +170,6 @@
 	.perguntas h3::before {
 		width: 1.2rem;
 		height: 1.2rem;
-		margin-top: 0.2rem;
 	}
 	.resposta {
 		font-size: 1.1rem;
@@ -159,7 +179,8 @@
 		font-size: 1.1rem;
 	}
 	.nome_servico {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
+		text-decoration: underline;
 	}
 	.nome_servico::before {
 		margin: 0.5rem auto;
@@ -169,6 +190,16 @@
 		font-size: 1.3rem;
 	}
 	.seta {
-		width: 1.5rem;
+		width: 1.3rem;
 	}
+	.setaActive {
+		width: 1.3rem;
+		transform: scaleX(-1);
+		transform: rotate(180deg);
+		transition: 0.3s;
+	}
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 5s linear;
 }

@@ -36,7 +36,12 @@ const Titulo = () => {
 										{question.question}
 									</h3>
 									<img
-										className={styles.seta}
+										className={`${
+											isActive === question.id &&
+											isVisible === true
+												? styles.setaActive
+												: styles.seta
+										}`}
 										src={Arrow}
 										alt="seta"
 									/>
