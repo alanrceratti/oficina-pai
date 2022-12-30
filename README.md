@@ -9,16 +9,13 @@
   </p>
 </p>
 
-
 ## About The Project
 
-This is a web-site in development for a mechanic car business in Brazil.
+This is a simple web-site developed for a car mechanic business in Brazil.
 
-The owner main focus is the web-site to allow the clients to make an appointment online to go to the company , choosing the service, date and time available. 
+The site allows the customer to check the services provided by the business, hours of opening and getting in touch through the contact form which can serve as a way of booking the desire service.
 
-The owner will then receive a email with the clients request and send a confirmation. 
-
-Currently this function is not build yet.
+It has the main focus in mobile users and it's css was coded first for mobile and then media queries were made for other devices. A personalized mobile menu with a nice animation when opened also gives a special touch to the web-site.
 
 ## Built With
 
@@ -26,5 +23,4 @@ HTML | CSS | JavaScript | React.js
 
 ## Authors
 
-* **Alan Ceratti** - ** - [Alan Ceratti](https://github.com/alanrceratti) - **
-
+-   **Alan Ceratti** - ** - [Alan Ceratti](https://github.com/alanrceratti) - **
