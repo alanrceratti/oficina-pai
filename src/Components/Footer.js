@@ -27,12 +27,12 @@ const Footer = () => {
 			</div>
 			<ul className={styles.icons}>
 				<li>
-					<a href="https://wa.me/+5555999965450">
+					<a href="https://www.facebook.com/messages/t/120474531982214">
 						<img src={Messenger} alt="messenger" />
 					</a>
 				</li>{" "}
 				<li>
-					<a href="https://wa.me/+5555999965450">
+					<a href="https://www.facebook.com/profile.php?id=100066897012447">
 						<img src={Face} alt="messenger" />
 					</a>
 				</li>{" "}
