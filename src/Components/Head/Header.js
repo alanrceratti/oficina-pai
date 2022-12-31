@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import LogoSF from "../../Assets/logosemfundoazul.png";
+import LogoSF from "../../Assets/logosemfundoazul.jpg";
 import Localizacao from "./Localizacao";
 import MenuMobile from "./MenuMobile";
 
