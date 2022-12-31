@@ -13,7 +13,7 @@
 
 @media (min-width: 26rem) {
 	.titulo {
-		font-size: 1.15rem;
+		font-size: 1.25rem;
 		font-family: var(--type-first);
 		margin-bottom: 0.5rem;
 	}
@@ -91,12 +91,12 @@
 }
 @media (min-width: 84rem) {
 	.titulo {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-family: var(--type-first);
 	}
 
 	.paragrafo p {
-		font-size: 1.25rem;
+		font-size: 1.1rem;
 		font-family: var(--type-second);
 		text-align: justify;
 		margin: 1.5rem;

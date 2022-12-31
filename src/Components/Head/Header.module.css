@@ -23,6 +23,7 @@
 	.logo img {
 		width: 90%;
 		max-width: 600px;
+		margin-right: 1rem;
 	}
 }
 
@@ -34,6 +35,7 @@
 	.logo img {
 		width: 80%;
 		max-width: 800px;
+		margin-right: 1rem;
 	}
 }
 @media (min-width: 84rem) {
@@ -44,5 +46,6 @@
 	.logo img {
 		max-width: 800px;
 		min-width: 500px;
+		margin: auto auto;
 	}
 }

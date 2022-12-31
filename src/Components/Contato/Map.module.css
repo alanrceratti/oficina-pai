@@ -11,13 +11,13 @@
 }
 @media (min-width: 48rem) {
 	.iframe {
-		width: 80vw;
+		width: 70vw;
 		height: 50vh;
 	}
 }
 @media (min-width: 84rem) {
 	.iframe {
-		width: 80vw;
+		width: 70vw;
 		height: 50vh;
 	}
 }
