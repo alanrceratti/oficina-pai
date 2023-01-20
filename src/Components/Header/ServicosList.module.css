@@ -6,7 +6,8 @@
 	background-color: var(--main-white);
 	padding: 0.5rem;
 	width: auto;
-	box-shadow: 0 0 0 2px var(--blue);
+	box-sizing: content-box;
+	box-shadow: inset 0px 0 0px 1px rgb(233, 233, 233);
 }
 .servico {
 	display: grid;
@@ -85,6 +86,9 @@
 	}
 }
 @media (min-width: 84rem) {
+	.servi {
+		margin: 1px auto;
+	}
 	.servico img {
 		margin: 0.65rem;
 		min-width: 3rem;
