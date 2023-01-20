@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../Servicos/Titulo.module.css";
 import faq from "./faq.json";
-import Arrow from "../../Assets/arroww.png";
+import plus from "../../Assets/plus.png";
+import minus from "../../Assets/minus.png";
 
 const Titulo = () => {
 	const data = { faq };
@@ -27,24 +28,36 @@ const Titulo = () => {
 						<ul className={styles.perguntas}>
 							{category.questions.map((question) => (
 								<li key={question.question}>
-									<h3
-										onClick={() => {
-											setIsActive(question.id);
-											handleVisible(!isVisible);
-										}}
-									>
-										{question.question}
-									</h3>
-									<img
-										className={`${
-											isActive === question.id &&
-											isVisible === true
-												? styles.setaActive
-												: styles.seta
-										}`}
-										src={Arrow}
-										alt="seta"
-									/>
+									<div>
+										<h3
+											onClick={() => {
+												setIsActive(question.id);
+												handleVisible(!isVisible);
+											}}
+										>
+											{question.question}
+										</h3>
+
+										<img
+											onClick={() => {
+												setIsActive(question.id);
+												handleVisible(!isVisible);
+											}}
+											className={`${
+												isActive === question.id &&
+												isVisible === true
+													? styles.signActive
+													: styles.sign
+											}`}
+											src={
+												isActive === question.id &&
+												isVisible === true
+													? minus
+													: plus
+											}
+											alt="seta"
+										/>
+									</div>
 									<p
 										className={`${
 											isActive === question.id &&

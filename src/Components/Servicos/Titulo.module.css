@@ -8,10 +8,12 @@
 	text-align: left;
 	cursor: pointer;
 	transition: 0.3s;
+	margin-left: 2rem;
 }
 .perguntas li h3:hover {
 	background-color: rgba(243, 122, 0, 0.1);
 }
+
 .resposta {
 	display: block;
 	margin: 0.5rem 0rem 1rem 1.5rem;
@@ -22,7 +24,7 @@
 	font-family: var(--type-second);
 	font-size: 0.875rem;
 	white-space: pre-line;
-	transform: translateY(-2rem);
+	transform: translateY(-1rem);
 	overflow: hidden;
 }
 
@@ -53,7 +55,8 @@
 	height: 0.1rem;
 	background: var(--orange);
 	display: block;
-	padding-top: 1rem;
+	padding-top: 0.5rem;
+	opacity: 0.5;
 }
 .perguntas h3 {
 	display: inline;
@@ -62,31 +65,22 @@
 	position: relative;
 	font-size: 0.875rem;
 }
-.perguntas h3::before {
-	content: " ";
-	position: absolute;
-	width: 1rem;
-	height: 1rem;
-	border-radius: 4px;
-	background-color: var(--orange);
-	opacity: 0.7;
-	z-index: -1;
-	margin-left: -0.3rem;
-	margin-top: 0.3rem;
-}
 
-.seta {
-	padding: 0px;
-	position: absolute;
+.sign {
 	width: 1rem;
-	height: auto;
-}
-.setaActive {
-	width: 1rem;
-	transform: scaleX(-1);
+	opacity: 0.8;
+	margin-left: 0.2rem;
+	translate: 0px 3px;
 	transform: rotate(180deg);
 	transition: 0.3s;
 }
+.signActive {
+	width: 1rem;
+	opacity: 0.8;
+	translate: 0px 3px;
+	margin-left: 0.2rem;
+}
+
 @media (min-width: 26rem) {
 	.titulo {
 		font-size: 1.25rem;
@@ -114,10 +108,10 @@
 	.perguntas h3 {
 		font-size: 1rem;
 	}
-	.seta {
+	.sign {
 		width: 1rem;
 	}
-	.setaActive {
+	.signActive {
 		width: 1rem;
 		transform: scaleX(-1);
 		transform: rotate(180deg);
@@ -152,14 +146,16 @@
 	.perguntas h3 {
 		font-size: 1.1rem;
 	}
-	.seta {
+	.sign {
 		width: 1.1rem;
 	}
-	.setaActive {
+	.signActive {
 		width: 1.1rem;
-		transform: scaleX(-1);
-		transform: rotate(180deg);
+		transform: rotate(380deg);
 		transition: 0.3s;
+		transform: translateY(4px);
+		opacity: 0.8;
+		margin-left: 0.2rem;
 	}
 }
 @media (min-width: 84rem) {
@@ -189,14 +185,20 @@
 	.perguntas h3 {
 		font-size: 1.3rem;
 	}
-	.seta {
+
+	.sign {
 		width: 1.3rem;
-	}
-	.setaActive {
-		width: 1.3rem;
-		transform: scaleX(-1);
+		opacity: 0.8;
+		margin-left: 0.2rem;
+		translate: 0px 3px;
 		transform: rotate(180deg);
 		transition: 0.3s;
+	}
+	.signActive {
+		width: 1.3rem;
+		opacity: 0.8;
+		translate: 0px 3px;
+		margin-left: 0.2rem;
 	}
 }
 

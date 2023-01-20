@@ -5,6 +5,7 @@ import Hours from "../Components/Contato/Hours";
 import Map from "../Components/Contato/Map";
 import Header from "../Components/Head/Header";
 import Localizacao from "../Components/Head/Localizacao";
+import Footer from "../Components/Footer";
 
 const Contato = () => {
 	return (
@@ -14,6 +15,7 @@ const Contato = () => {
 			<Form />
 			<Hours />
 			<Map />
+			<Footer />
 			<Localizacao />
 		</section>
 	);

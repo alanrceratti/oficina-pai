@@ -7,7 +7,7 @@ body {
 	border: 0;
 	outline: 0;
 	--main-white: #fcfffe;
-	--type-first: "Inter", Arial, sans-serif;
+	--type-first: "Unbounded", Arial, sans-serif;
 	--type-second: "Roboto", Georgia;
 	font-family: var(--type-first);
 	margin: 0px;

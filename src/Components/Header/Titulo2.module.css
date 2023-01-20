@@ -5,9 +5,9 @@
 	/* background: url("../../Assets/agendamento.jpg") no-repeat center center; */
 	background-size: cover;
 	width: auto;
-	height: 10rem;
+	height: 12rem;
 }
-.img {
+.contagiro {
 	width: 100vw;
 	display: block;
 	position: absolute;
@@ -28,11 +28,11 @@
 }
 
 .titulo2 p {
-	line-height: 1rem;
+	line-height: 1.1rem;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0);
 	color: var(--orange);
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.905);
 }
 
@@ -41,8 +41,17 @@
 	-webkit-text-stroke: 1px rgba(1, 174, 231, 0.6);
 }
 
+.glass {
+	backdrop-filter: blur(3px) saturate(80%);
+	-webkit-backdrop-filter: blur(1px) saturate(100%);
+	background-color: rgba(141, 141, 141, 0.1);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	margin-bottom: 1rem;
+}
+
 @media (min-width: 26rem) {
-	.img {
+	.contagiro {
 		width: 100%;
 		height: 120%;
 		object-fit: fill;
@@ -67,7 +76,7 @@
 
 /* Laptop */
 @media (min-width: 48rem) {
-	.img {
+	.contagiro {
 		width: 120%;
 		height: 130%;
 		object-fit: fill;

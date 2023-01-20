@@ -4,6 +4,7 @@ import Checkmark from "../../Assets/Checkmark.png";
 import EixoTraseiro from "../../Assets/eixo-traseiro.jpg";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
+import Bmw from "../../Assets/bmw.jpg";
 
 const Titulo = () => {
 	const navigate = useNavigate();
@@ -19,12 +20,13 @@ const Titulo = () => {
 						Oficina especializada em Geometria e Balanceamento de
 						veículos.
 					</h1>
-					<Button
-						onClick={navigateContato}
-						className={styles.agendar}
-						name="Agendar Agora"
-					/>
 				</div>
+				<img className={styles.bmw} src={Bmw} alt="bmw" />
+				<Button
+					onClick={navigateContato}
+					className={styles.agendar}
+					name="Agendar Agora"
+				/>
 				<div className={`${styles.container} container`}>
 					<img
 						className={styles.geometria}

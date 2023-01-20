@@ -15,7 +15,7 @@
 			{
 				"id": 3,
 				"question": "Qual o custo médio?",
-				"answer": "O custo médio para o balanceamento e a geometriade um veículo pode variar bastante, dependendo de vários fatores, como o tipo de veículo, o tipo de pneus e a complexidade da tarefa. Aqui na nossa oficina os preço inicial é de R$ 69,00."
+				"answer": "O custo médio para o balanceamento e a geometriade um veículo pode variar bastante, dependendo de vários fatores, como o tipo de veículo, o tipo de pneus e a complexidade da tarefa. Aqui na nossa oficina o preço inicial é de R$ 69,00."
 			}
 		]
 	},
@@ -36,7 +36,7 @@
 			{
 				"id": 6,
 				"question": "Qual o custo médio?",
-				"answer": "O custo médio para o alinhamento de eixo traseiro de um veículo pode variar bastante,dependendo de vários fatores, como o tipo de veículo, o tipo de pneus e a complexidade da tarefa. Aqui na nossa oficina os preço inicial é de R$ 159,00."
+				"answer": "O custo médio para o alinhamento de eixo traseiro de um veículo pode variar bastante,dependendo de vários fatores, como o tipo de veículo, o tipo de pneus e a complexidade da tarefa. Aqui na nossa oficina o preço inicial é de R$ 159,00."
 			}
 		]
 	},
@@ -56,7 +56,7 @@
 			{
 				"id": 9,
 				"question": "Qual o custo médio?",
-				"answer": "O custo da troca de óleo e filtro pode variar bastante, dependendo do tipo de veículo, do tipo de óleo e de outros fatores. Aqui na nossa oficina os preço inicial é de R$ 199,00."
+				"answer": "O custo da troca de óleo e filtro pode variar bastante, dependendo do tipo de veículo, do tipo de óleo e de outros fatores. Aqui na nossa oficina o preço inicial é de R$ 199,00."
 			}
 		]
 	},
@@ -76,7 +76,7 @@
 			{
 				"id": 12,
 				"question": "Qual o custo médio?",
-				"answer": "O custo da manutenção preventiva pode variar bastante, dependendo do tipo de veículo, da complexidade da tarefa, quantidade de componentes a serem substituidos e de outros fatores. Aqui na nossa oficina os preço inicial é de R$ 99,00."
+				"answer": "O custo da manutenção preventiva pode variar bastante, dependendo do tipo de veículo, da complexidade da tarefa, quantidade de componentes a serem substituidos e de outros fatores. Aqui na nossa oficina o preço inicial é de R$ 99,00."
 			}
 		]
 	}

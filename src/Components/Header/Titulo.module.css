@@ -1,13 +1,11 @@
 .titulo {
-	color: white;
+	color: rgb(19, 19, 19);
 	display: block;
-	font-size: 1.5rem;
-	padding-top: 2rem;
+	font-size: 2rem;
 	margin: 0.5rem auto;
-	background-position: top;
-	-webkit-text-stroke: 1px rgba(4, 9, 16, 0.3);
-	text-shadow: 2px 2px #000000cb;
-	line-height: 3rem;
+
+	text-shadow: 2px 2px #ffffffcb;
+	line-height: 2rem;
 	font-family: var(--type-first);
 }
 
@@ -15,6 +13,9 @@
 	margin: 0 auto;
 	padding: 0.4rem 0.7rem;
 	font-size: 0.875rem;
+	position: absolute;
+	top: 33%;
+	left: 30%;
 }
 
 .paragrafo p {
@@ -47,14 +48,13 @@
 	margin: 0 auto;
 	padding-bottom: 1rem;
 }
-.main {
+.bmw {
 	padding: 0px;
-	width: auto;
-	padding-bottom: 1rem;
+	width: 100%;
 	box-shadow: 0 0 0 3px rgb(8, 90, 162);
-	background: url("../../Assets/bmw.jpg") no-repeat center center;
 	background-size: cover;
 	height: 13rem;
+	position: relative;
 }
 
 @media (min-width: 26rem) {
