@@ -2,78 +2,87 @@
 	color: rgb(19, 19, 19);
 	display: block;
 	font-size: 2rem;
-	margin: 0.5rem auto;
-
+	margin: 1.5rem auto;
 	text-shadow: 2px 2px #ffffffcb;
 	line-height: 2rem;
 	font-family: var(--type-first);
 }
+.divAgendar {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	right: 10%;
+}
+.main {
+	position: relative;
+	margin-top: 3rem;
+}
 
 .agendar {
 	margin: 0 auto;
-	padding: 0.4rem 0.7rem;
 	font-size: 0.875rem;
-	position: absolute;
-	top: 33%;
-	left: 30%;
+	display: flex;
+	padding: 0.4rem 1rem;
+	font-size: 1rem;
+
+	justify-content: center;
+	align-items: center;
 }
 
 .paragrafo p {
 	margin: 1rem 0 1rem 1rem;
-	text-align: left;
 	color: rgb(20, 20, 20);
-	font-size: 0.875rem;
-	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	font-family: var(--type-first);
 	text-align: left;
-	margin-bottom: 1rem;
-	line-height: 1rem;
-	display: block;
+	line-height: 2rem;
+	margin: 3rem 0 0 2rem;
 }
 .paragrafo img {
 	display: inline-block;
 	width: 1rem;
 	height: 1rem;
+	position: relative;
 }
 
 .geometria {
-	height: 11rem;
-	margin: auto auto;
+	margin-left: 5rem;
+	width: 15rem;
+	height: 25rem;
+	margin-bottom: 1rem;
 }
 
 .container {
 	display: flex;
-	margin-top: 1rem;
-	border-left: 1px solid rgba(196, 196, 196, 0.3);
-	border-right: 1px solid rgba(196, 196, 196, 0.3);
-	margin: 0 auto;
-	padding-bottom: 1rem;
+	background-color: rgb(255, 255, 255);
+	margin: 2rem auto;
 }
 .bmw {
 	padding: 0px;
-	width: 100%;
-	box-shadow: 0 0 0 3px rgb(8, 90, 162);
-	background-size: cover;
-	height: 13rem;
+	object-fit: cover;
+	width: 100vw;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.492);
+	height: 40vh;
 	position: relative;
 }
 
-@media (min-width: 26rem) {
+@media (max-width: 26rem) {
 	.bmw {
 		padding: 0px;
 		width: 70.5rem;
 		box-shadow: 0 0 0 3px rgb(8, 90, 162);
-		height: 25rem;
+		height: 20rem;
 		position: relative;
 	}
 	.agendar {
 		top: 30%;
 		left: 35%;
-		padding: 0.7rem 1rem;
-		font-size: 1.5rem;
+		padding: 0.3rem 0.8rem;
+		font-size: 1rem;
 	}
 	.titulo {
-		font-size: 1.8rem;
-		line-height: 3rem;
+		font-size: 1.5rem;
+		line-height: 2rem;
 	}
 	.paragrafo p {
 		color: rgb(20, 20, 20);
@@ -96,7 +105,7 @@
 }
 
 /* Laptop */
-@media (min-width: 48rem) {
+/* @media (min-width: 48rem) {
 	.bmw {
 		padding: 0px;
 		width: 70.5rem;
@@ -136,9 +145,9 @@
 		padding: 0.7rem 1rem;
 		font-size: 1.5rem;
 	}
-}
+} */
 /* Desktop */
-@media (min-width: 85rem) {
+/* @media (min-width: 85rem) {
 	.bmw {
 		padding: 0px;
 		width: 70.5rem;
@@ -184,4 +193,4 @@
 		padding: 0.7rem 1rem;
 		font-size: 1.5rem;
 	}
-}
+} */

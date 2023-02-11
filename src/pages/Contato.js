@@ -6,15 +6,22 @@ import Map from "../Components/Contato/Map";
 import Header from "../Components/Head/Header";
 import Localizacao from "../Components/Head/Localizacao";
 import Footer from "../Components/Footer";
+import { motion } from "framer-motion";
 
 const Contato = () => {
 	return (
 		<section className="mainContainer">
 			<Header />
-			<Head />
-			<Form />
-			<Hours />
-			<Map />
+			<motion.div
+				initial={{ x: -300 }}
+				animate={{ x: 0 }}
+				transition={{ duration: 0.5 }}
+			>
+				<Head />
+				<Form />
+				<Hours />
+				<Map />
+			</motion.div>
 			<Footer />
 			<Localizacao />
 		</section>

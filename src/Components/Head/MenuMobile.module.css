@@ -166,7 +166,7 @@
 		font-size: 1.2rem;
 		display: inline-block;
 		color: white;
-		margin-top: 0.5rem;
+		margin-top: 2.5rem;
 		border-radius: 0.4rem;
 		background: var(--blue);
 		padding: 0.6rem 0.7rem;
@@ -177,7 +177,7 @@
 	.link:hover,
 	.link:focus {
 		outline: none;
-		box-shadow: 0 0 0 1px var(--blue);
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.119);
 		background: #cc4b00c7;
 	}
 }

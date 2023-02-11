@@ -1,7 +1,7 @@
 .endereco {
 	display: block;
 	color: rgb(213, 210, 210);
-	font-size: 0.75rem;
+	font-size: 1rem;
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
@@ -10,7 +10,7 @@
 	background-color: rgb(53, 53, 53);
 }
 
-@media (min-width: 26rem) {
+/* @media (min-width: 26rem) {
 	.endereco {
 		font-size: 0.9rem;
 	}
@@ -24,4 +24,4 @@
 	.endereco {
 		font-size: 1.5rem;
 	}
-}
+} */

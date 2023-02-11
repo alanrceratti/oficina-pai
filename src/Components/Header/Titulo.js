@@ -20,13 +20,16 @@ const Titulo = () => {
 						Oficina especializada em Geometria e Balanceamento de
 						veículos.
 					</h1>
+
+					<img className={styles.bmw} src={Bmw} alt="bmw" />
+					<div className={styles.divAgendar}>
+						<Button
+							onClick={navigateContato}
+							className={styles.agendar}
+							name="Agendar Agora"
+						/>
+					</div>
 				</div>
-				<img className={styles.bmw} src={Bmw} alt="bmw" />
-				<Button
-					onClick={navigateContato}
-					className={styles.agendar}
-					name="Agendar Agora"
-				/>
 				<div className={`${styles.container} container`}>
 					<img
 						className={styles.geometria}
