@@ -6,7 +6,7 @@ function InViewSection({ children }) {
 	const isInView = useInView(ref);
 
 	useEffect(() => {
-		console.log("Element is in view: ", isInView);
+		// console.log("Element is in view: ", isInView);
 	}, [isInView]);
 
 	return (

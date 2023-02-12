@@ -5,13 +5,17 @@ import EixoTraseiro from "../../Assets/eixo-traseiro.jpg";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import Bmw from "../../Assets/bmw.jpg";
+import useMedia from "../../Hooks/useMedia";
 
 const Titulo = () => {
+	const mobile = useMedia("(max-width: 30rem)");
+
 	const navigate = useNavigate();
 	const navigateContato = () => {
 		// 👇️ navigate to /
 		navigate("/Contato");
 	};
+
 	return (
 		<>
 			<section className="animeLeft">
@@ -31,11 +35,13 @@ const Titulo = () => {
 					</div>
 				</div>
 				<div className={`${styles.container} container`}>
-					<img
-						className={styles.geometria}
-						src={EixoTraseiro}
-						alt="geometria"
-					/>
+					{!mobile ? (
+						<img
+							className={styles.geometria}
+							src={EixoTraseiro}
+							alt="geometria"
+						/>
+					) : null}
 					<div className={`${styles.paragrafo} container`}>
 						<p>
 							<img src={Checkmark} alt="mark" /> Somos

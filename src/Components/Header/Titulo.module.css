@@ -30,13 +30,12 @@
 }
 
 .paragrafo p {
-	margin: 1rem 0 1rem 1rem;
+	margin: 1rem 1rem;
 	color: rgb(20, 20, 20);
 	font-size: 1rem;
 	font-family: var(--type-first);
 	text-align: left;
-	line-height: 2rem;
-	margin: 3rem 0 0 2rem;
+	line-height: 1.5rem;
 }
 .paragrafo img {
 	display: inline-block;
@@ -46,9 +45,11 @@
 }
 
 .geometria {
-	margin-left: 5rem;
-	width: 15rem;
-	height: 25rem;
+	margin-left: 1rem;
+	width: 40%;
+	height: 30%;
+	max-width: 15rem;
+	max-height: 100%;
 	margin-bottom: 1rem;
 }
 
@@ -66,7 +67,7 @@
 	position: relative;
 }
 
-@media (max-width: 26rem) {
+@media (min-width: 26rem) {
 	.bmw {
 		padding: 0px;
 		width: 70.5rem;
@@ -89,17 +90,19 @@
 		font-size: 1rem;
 		font-family: Arial, Helvetica, sans-serif;
 		text-align: left;
-		margin-bottom: 1rem;
-		line-height: 1.5rem;
+		margin: 2rem 1rem;
+		line-height: 2rem;
 	}
 	.geometria {
-		height: 18rem;
-		margin: auto auto;
+		width: 40%;
+		height: 30%;
+		max-width: 15rem;
+		max-height: 100%;
+		margin: 2rem 0;
 	}
 	.container {
 		border-left: 1px solid rgba(196, 196, 196, 0.3);
 		border-right: 1px solid rgba(196, 196, 196, 0.3);
 		margin: 0 auto;
-		padding-bottom: 4rem;
 	}
 }

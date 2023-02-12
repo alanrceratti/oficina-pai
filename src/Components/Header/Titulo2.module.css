@@ -58,7 +58,6 @@
 
 @media (max-width: 26rem) {
 	.contagiro {
-		width: fit-content;
 		height: 120%;
 		object-fit: fill;
 	}
@@ -70,7 +69,6 @@
 	}
 
 	.titulo2 p {
-		margin-top: 1rem;
 		font-size: 1.25rem;
 		line-height: 1.25rem;
 	}
