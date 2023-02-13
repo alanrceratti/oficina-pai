@@ -9,7 +9,7 @@ body {
 	--type-first: "Unbounded", Arial, sans-serif;
 	--type-second: "Roboto", Georgia;
 	font-family: var(--type-first);
-	margin: 0px;
+	margin: 0 auto;
 	background-color: var(--main-white);
 	--blue: #1261a3;
 	--background1: #f5fffa;
