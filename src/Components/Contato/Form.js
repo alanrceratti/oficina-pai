@@ -19,6 +19,7 @@ const Form = () => {
 			.then(
 				(result) => {
 					alert("Mensagem enviada com sucesso!");
+					form.current.reset();
 				},
 				(error) => {
 					alert("Falha ao enviar mensagem, tente novamente.");
